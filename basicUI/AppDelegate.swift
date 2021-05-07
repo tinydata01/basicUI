@@ -1,14 +1,15 @@
 //
 //  AppDelegate.swift
-//  skeleton
+//  skeleton2
 //
 //  Created by user189922 on 5/7/21.
+//  Copyright © 2021 user189922. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
@@ -41,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "skeleton")
+        let container = NSPersistentContainer(name: "skeleton2")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
