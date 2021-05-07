@@ -15,8 +15,20 @@ class TrackShipmentViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    func addBackground() {
+        // screen width and height:
+            let width  = UIScreen.main.bounds.width
+            let height = UIScreen.main.bounds.height
+            
+        let imageViewBackground = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
+        imageViewBackground.image = UIImage(named: "loginBackground")
 
+        // you can change the content mode:
+            imageViewBackground.contentMode = UIView.ContentMode.scaleAspectFill
+
+            self.view.addSubview(imageViewBackground)
+            self.view.sendSubviewToBack(imageViewBackground)
+    }
     /*
     // MARK: - Navigation
 
