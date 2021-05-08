@@ -21,11 +21,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rW-hN-jxk">
-                                <rect key="frame" x="57" y="444" width="300" height="49"/>
+                                <rect key="frame" x="57" y="469.5" width="300" height="68.5"/>
                                 <color key="backgroundColor" red="0.043137254901960784" green="0.17254901960784313" blue="0.38431372549019605" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="mja-PD-laD"/>
-                                    <constraint firstAttribute="height" constant="49" id="xiV-t0-5yC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="rbb-eS-zJq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <state key="normal" title="Login">
@@ -39,84 +39,84 @@
                                     <segue destination="RUD-fd-6dx" kind="show" id="3HS-X6-Gzc"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UT4-Qe-Ixr">
-                                <rect key="frame" x="57" y="292" width="300" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="KX3-IV-eG2"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ozw-Gk-cTm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W6H-Zw-ywD">
-                                <rect key="frame" x="57" y="350" width="300" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="hrs-mT-VXg"/>
-                                    <constraint firstAttribute="height" constant="50" id="vcG-oI-Z4l"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Urj-Wt-Q3r">
-                                <rect key="frame" x="107" y="148" width="200" height="128"/>
+                                <rect key="frame" x="107" y="135" width="200" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="c6v-n3-m7I"/>
                                     <constraint firstAttribute="height" constant="128" id="rnp-Og-yXy"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New User?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Te-QW-cDB">
-                                <rect key="frame" x="107" y="513" width="80.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="New User?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Te-QW-cDB">
+                                <rect key="frame" x="86" y="551" width="80.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80.5" id="h8l-42-YC1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <color key="textColor" red="0.039215686270000001" green="0.20392156859999999" blue="0.32156862749999998" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smh-iy-Kdy">
-                                <rect key="frame" x="203.5" y="513" width="142" height="21"/>
+                                <rect key="frame" x="188" y="551" width="189" height="21"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="19"/>
                                 <color key="textColor" red="0.039215686270000001" green="0.20392156859999999" blue="0.32156862749999998" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYb-i2-j7M">
-                                <rect key="frame" x="208.5" y="405" width="148" height="23"/>
+                                <rect key="frame" x="208.5" y="436.5" width="148" height="23"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="19"/>
                                 <color key="textColor" red="0.039215686274509803" green="0.20392156862745098" blue="0.32156862745098036" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W6H-Zw-ywD">
+                                <rect key="frame" x="57" y="378.5" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2zC-Xv-dL0"/>
+                                    <constraint firstAttribute="width" constant="300" id="hrs-mT-VXg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="kKf-Li-qI5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCe-c6-foe">
+                                <rect key="frame" x="57" y="299.5" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="h8k-Mh-bPE"/>
+                                    <constraint firstAttribute="height" constant="50" id="tpF-uG-4Y8"/>
+                                </constraints>
+                                <color key="textColor" red="0.039215686270000001" green="0.20392156859999999" blue="0.32156862749999998" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="W6H-Zw-ywD" firstAttribute="top" secondItem="UT4-Qe-Ixr" secondAttribute="bottom" constant="8" id="00k-uR-mPt"/>
                             <constraint firstItem="7Te-QW-cDB" firstAttribute="firstBaseline" secondItem="smh-iy-Kdy" secondAttribute="baseline" id="A9A-kl-d2K"/>
-                            <constraint firstItem="5rW-hN-jxk" firstAttribute="top" secondItem="bYb-i2-j7M" secondAttribute="bottom" constant="16" id="Ek8-hV-9xx"/>
+                            <constraint firstItem="5rW-hN-jxk" firstAttribute="top" secondItem="bYb-i2-j7M" secondAttribute="bottom" constant="10" id="DBQ-pr-QTD"/>
                             <constraint firstItem="W6H-Zw-ywD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GZc-hU-PB9"/>
-                            <constraint firstAttribute="trailing" secondItem="smh-iy-Kdy" secondAttribute="trailing" constant="68.5" id="H8q-FY-pFf"/>
-                            <constraint firstItem="7Te-QW-cDB" firstAttribute="top" secondItem="5rW-hN-jxk" secondAttribute="bottom" constant="20" id="KBg-xu-odF"/>
+                            <constraint firstAttribute="trailing" secondItem="smh-iy-Kdy" secondAttribute="trailing" constant="37" id="H8q-FY-pFf"/>
+                            <constraint firstItem="bYb-i2-j7M" firstAttribute="top" secondItem="W6H-Zw-ywD" secondAttribute="bottom" constant="8" id="Hvr-cp-6wa"/>
+                            <constraint firstItem="bYb-i2-j7M" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JKs-ns-4X6"/>
+                            <constraint firstItem="7Te-QW-cDB" firstAttribute="top" secondItem="5rW-hN-jxk" secondAttribute="bottom" constant="13" id="KBg-xu-odF"/>
+                            <constraint firstItem="W6H-Zw-ywD" firstAttribute="top" secondItem="yCe-c6-foe" secondAttribute="bottom" constant="29" id="OBh-Fd-onL"/>
                             <constraint firstItem="Urj-Wt-Q3r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OkP-yC-KST"/>
                             <constraint firstItem="5rW-hN-jxk" firstAttribute="trailing" secondItem="W6H-Zw-ywD" secondAttribute="trailing" id="R1X-jY-icd"/>
-                            <constraint firstItem="Urj-Wt-Q3r" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="60" id="Uad-eC-kfx"/>
-                            <constraint firstItem="UT4-Qe-Ixr" firstAttribute="top" secondItem="Urj-Wt-Q3r" secondAttribute="bottom" constant="16" id="W6X-Nb-iJ6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Te-QW-cDB" secondAttribute="bottom" constant="328" id="Whf-h2-ZZS"/>
+                            <constraint firstItem="Urj-Wt-Q3r" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="47" id="Uad-eC-kfx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Te-QW-cDB" secondAttribute="bottom" constant="290" id="Whf-h2-ZZS"/>
+                            <constraint firstItem="smh-iy-Kdy" firstAttribute="leading" secondItem="7Te-QW-cDB" secondAttribute="trailing" constant="21.5" id="YXx-vw-Hmm"/>
                             <constraint firstItem="5rW-hN-jxk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yc0-2a-CXl"/>
-                            <constraint firstItem="7Te-QW-cDB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="Zfq-x7-4ZB"/>
-                            <constraint firstItem="5rW-hN-jxk" firstAttribute="top" secondItem="W6H-Zw-ywD" secondAttribute="bottom" constant="44" id="cWu-qh-DcZ"/>
-                            <constraint firstItem="5rW-hN-jxk" firstAttribute="top" secondItem="bYb-i2-j7M" secondAttribute="bottom" constant="16" id="chD-K0-Mfo"/>
-                            <constraint firstAttribute="bottom" secondItem="5rW-hN-jxk" secondAttribute="bottom" constant="403" id="coA-hx-ruN"/>
-                            <constraint firstItem="smh-iy-Kdy" firstAttribute="top" secondItem="5rW-hN-jxk" secondAttribute="bottom" constant="20" id="f9L-Vz-3Fd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="smh-iy-Kdy" secondAttribute="bottom" constant="328" id="fvR-R5-cqh"/>
+                            <constraint firstItem="7Te-QW-cDB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="Zfq-x7-4ZB"/>
+                            <constraint firstAttribute="bottom" secondItem="5rW-hN-jxk" secondAttribute="bottom" constant="355" id="coA-hx-ruN"/>
+                            <constraint firstItem="yCe-c6-foe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eXF-eJ-LMu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="smh-iy-Kdy" secondAttribute="bottom" constant="290" id="fvR-R5-cqh"/>
                             <constraint firstAttribute="trailing" secondItem="bYb-i2-j7M" secondAttribute="trailing" constant="57.5" id="io1-77-07u"/>
-                            <constraint firstItem="7Te-QW-cDB" firstAttribute="top" secondItem="5rW-hN-jxk" secondAttribute="bottom" constant="20" id="muj-cX-uat"/>
-                            <constraint firstItem="UT4-Qe-Ixr" firstAttribute="top" secondItem="Urj-Wt-Q3r" secondAttribute="bottom" constant="16" id="nQX-tv-rzZ"/>
-                            <constraint firstItem="bYb-i2-j7M" firstAttribute="top" secondItem="W6H-Zw-ywD" secondAttribute="bottom" constant="5" id="poP-Mz-DB9"/>
-                            <constraint firstItem="UT4-Qe-Ixr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q8y-bu-Maj"/>
-                            <constraint firstItem="smh-iy-Kdy" firstAttribute="top" secondItem="5rW-hN-jxk" secondAttribute="bottom" constant="20" id="wEP-bi-f7o"/>
-                            <constraint firstItem="W6H-Zw-ywD" firstAttribute="top" secondItem="UT4-Qe-Ixr" secondAttribute="bottom" constant="8" id="yQq-xW-Dbe"/>
+                            <constraint firstItem="smh-iy-Kdy" firstAttribute="top" secondItem="5rW-hN-jxk" secondAttribute="bottom" constant="13" id="wEP-bi-f7o"/>
                             <constraint firstItem="7Te-QW-cDB" firstAttribute="centerY" secondItem="smh-iy-Kdy" secondAttribute="centerY" id="yRr-Jj-zCo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="MpQ-Zv-9Gi"/>
                     <connections>
-                        <outlet property="_email" destination="UT4-Qe-Ixr" id="L5t-Po-fjT"/>
+                        <outlet property="_email" destination="yCe-c6-foe" id="K5C-8h-Csp"/>
                         <outlet property="_loginButton" destination="8bC-Xf-vdC" id="pnx-aH-jYe"/>
                         <outlet property="_password" destination="W6H-Zw-ywD" id="849-JU-War"/>
                     </connections>
@@ -220,7 +220,7 @@
                                 </state>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lbo-Sd-KO0" userLabel="Select Port of Loading" customClass="DropDown" customModule="iOSDropDown">
-                                <rect key="frame" x="111" y="305" width="250" height="50"/>
+                                <rect key="frame" x="111" y="305" width="250" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Aw2-CV-rgI"/>
                                     <constraint firstAttribute="width" constant="250" id="FXf-qg-juq"/>
@@ -229,7 +229,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Dd-rZ-E7k" customClass="DropDown" customModule="iOSDropDown">
-                                <rect key="frame" x="111" y="386" width="250" height="34"/>
+                                <rect key="frame" x="111" y="370" width="250" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="YEf-3k-87l"/>
                                     <constraint firstAttribute="width" constant="250" id="hPu-o6-zvo"/>
