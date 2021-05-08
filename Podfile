@@ -8,5 +8,6 @@ target 'basicUI' do
   # Pods for basicUI
 pod 'DropDown'
 pod "FlexibleSteppedProgressBar"
+pod 'StepIndicator', '~> 1.0.8'
 
 end

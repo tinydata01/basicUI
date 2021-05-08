@@ -1,20 +1,24 @@
 PODS:
   - DropDown (2.3.13)
   - FlexibleSteppedProgressBar (0.6.3)
+  - StepIndicator (1.0.8)
 
 DEPENDENCIES:
   - DropDown
   - FlexibleSteppedProgressBar
+  - StepIndicator (~> 1.0.8)
 
 SPEC REPOS:
   trunk:
     - DropDown
     - FlexibleSteppedProgressBar
+    - StepIndicator
 
 SPEC CHECKSUMS:
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   FlexibleSteppedProgressBar: 37741b5cd0cd14f2e2118b597b81d0a6534f4d5a
+  StepIndicator: 748b293f671355b021253f82031ac002f153dc81
 
-PODFILE CHECKSUM: f8a7d1c233de4f47fae396544f9c9a9a68890418
+PODFILE CHECKSUM: 50d949c2b4f7b20bc117c22cd1440f87c071b555
 
 COCOAPODS: 1.10.1

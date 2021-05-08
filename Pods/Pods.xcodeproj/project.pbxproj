@@ -3,102 +3,130 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0321DD013108CB0610406A1B87D89D3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		065A499DECA29C5423CBD712D901F032 /* StepIndicator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4518A80574E5E86F0F714E5CAEF8BAF2 /* StepIndicator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1206FD6496DBD0928B6DF8A6D224E4E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		13A2E80D7F76724948578DB323F549B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		2769598AEC9639B792C03FAA0C225A50 /* FlexibleSteppedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17934D24E93CDC9AEC141008C0F53A /* FlexibleSteppedProgressBar.swift */; };
-		2E9B4F0189FD79C11AE2B4B3BF8E6262 /* FSPBPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C07CF2C88C08C2AC707B80A7D0CDC /* FSPBPointExtension.swift */; };
-		361F5CE2807CBD530C8C6E63FD245F5A /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F3DFCE8632E4DCCB0659C604531BE /* DropDownCell.swift */; };
-		4A8FE4C4F6D45B41CE01A00D24C56961 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D949C63D6B4A5A6CBF4AFC27A44E280F /* DPDUIView+Extension.swift */; };
-		5F515237FF94DAB4C8A15B7E33A3877B /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3081FAD40BA3E6435174EA18F278AE9 /* DPDConstants.swift */; };
-		6064C623428CE711C252E442741F81AB /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32FDF4C522200CAFBBCF348CE6CB6FB /* DropDown+Appearance.swift */; };
-		70DC2340F999813D08470D1577A84D7D /* Pods-basicUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C46347DCEDAC38CC22F07AE8DDADD62A /* Pods-basicUI-dummy.m */; };
-		7911D8DA9D046EA0E129464FFEF0F728 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		842DFBB1471889C2CA329AE05620BBE7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7826B130822DA10AE1D08C181833729B /* DropDown.swift */; };
-		8E0F7DCE2DEE997FBCCEBB3313A46C6D /* FSPBTextLayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2099B552CBFAA00B043E05D791F3F17 /* FSPBTextLayerExtension.swift */; };
-		9518195DB69E904D77247E0A55A0043C /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3002EA39EDCF4740EB4B31A37D1EB572 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95897DCFD4071A7D61AEAE1DA86BB539 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A804562D7630FEAABA64BA9F874A9C /* DropDown-dummy.m */; };
-		BA7BB2FF04CE1CAFC5238D1807EF0034 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EAA813819C8E5ACB970553899A9AE2 /* DPDKeyboardListener.swift */; };
+		15FFAC3AA2A4E3099C8A4FE3871C88B6 /* StepIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D1F9F73201B568BA022E976749813 /* StepIndicatorView.swift */; };
+		25A1795C69CDDC39492971A25EA40742 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE9F2044B594B2048339140CBABAAF78 /* Media.xcassets */; };
+		2769598AEC9639B792C03FAA0C225A50 /* FlexibleSteppedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC81FCE5E4D1D85F13F0C46728AB91 /* FlexibleSteppedProgressBar.swift */; };
+		2E9B4F0189FD79C11AE2B4B3BF8E6262 /* FSPBPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43103D28994032C669CEF2E79978F38A /* FSPBPointExtension.swift */; };
+		3097B546A7E3FB10BEBDCB850405120D /* Pods-basicUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B58B93B8E03F6E1F107A9FF2AA9B02 /* Pods-basicUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		361F5CE2807CBD530C8C6E63FD245F5A /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AB894B2E975E369D86619ECBB6220E /* DropDownCell.swift */; };
+		3B15A3311292E0F7DDE53DCB535EE1D2 /* LineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A80A94CB0AC09166E0255B7C2F171C /* LineLayer.swift */; };
+		4A8FE4C4F6D45B41CE01A00D24C56961 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AC281394AA17DCA1C8DD7E9F030E60 /* DPDUIView+Extension.swift */; };
+		52461795B33947634A9F9EC0A84790C5 /* Pods-basicUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C46347DCEDAC38CC22F07AE8DDADD62A /* Pods-basicUI-dummy.m */; };
+		5F515237FF94DAB4C8A15B7E33A3877B /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF833A09DBF6A176C9396FEF210168 /* DPDConstants.swift */; };
+		6064C623428CE711C252E442741F81AB /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBBA359F356DAACEAB47ECEB59E89D6 /* DropDown+Appearance.swift */; };
+		842DFBB1471889C2CA329AE05620BBE7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C45D80AB505368BC7FC9CADAC59B0 /* DropDown.swift */; };
+		8C4E803384D31E6FF6AABE4FF67E80A3 /* AnnularLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF252FD12FCC1DE0D22D4A3277DE1EA5 /* AnnularLayer.swift */; };
+		8E0F7DCE2DEE997FBCCEBB3313A46C6D /* FSPBTextLayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EA46D02A1B40A30C9706C36856633 /* FSPBTextLayerExtension.swift */; };
+		9518195DB69E904D77247E0A55A0043C /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B60BAE537A4BB5E32BC656E36D63F2 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95897DCFD4071A7D61AEAE1DA86BB539 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF038C94EC943F5D0855115225E674 /* DropDown-dummy.m */; };
+		97080F281E675BD427E37B1C8EE772F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		97125B700545BB1CBA5E6BCF2F840C3D /* StepIndicator.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD93B65BC276886EF678822653223AE9 /* StepIndicator.bundle */; };
+		BA7BB2FF04CE1CAFC5238D1807EF0034 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4947447E4A73C69C7057EC8F63251BA /* DPDKeyboardListener.swift */; };
 		C99487C04757ECF4F73FA1D4519CFD6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		D0CF04F1CD027948C768EFCD2B665DF5 /* FlexibleSteppedProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8228CDDAF31A8FBF09C7C52E2CE9D06 /* FlexibleSteppedProgressBar-dummy.m */; };
-		D8A6E0A78272250746CB5F13926824F9 /* Pods-basicUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B58B93B8E03F6E1F107A9FF2AA9B02 /* Pods-basicUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9BFE2CA36C2D933F9B093D89AA044E4 /* FlexibleSteppedProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C0B4DB8BC9EC9A62D2ACD9DC146495 /* FlexibleSteppedProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB3D83C05EC7793D23A1192C11B9F631 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36985CDD91FC5C4AB094053B92844B9D /* DropDownCell.xib */; };
-		EF171AE4747D860473D8D3435AC88402 /* FlexibleSteppedProgressBarTextLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF9C4C0605A976AC77A1A10B4EF6591 /* FlexibleSteppedProgressBarTextLocation.swift */; };
+		D0CF04F1CD027948C768EFCD2B665DF5 /* FlexibleSteppedProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44004C66909C1F1E3AF4C5014BD233B5 /* FlexibleSteppedProgressBar-dummy.m */; };
+		D9BFE2CA36C2D933F9B093D89AA044E4 /* FlexibleSteppedProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 839144460D0BD9DF184049C075A44672 /* FlexibleSteppedProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E49990BCA7C7F7FA20BA83257849ECDE /* StepIndicator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 604786CFD77F4C45242AD1F769A8527B /* StepIndicator-dummy.m */; };
+		EB3D83C05EC7793D23A1192C11B9F631 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4DCA87CDF9D03C03F4D5B49AD8E88D2 /* DropDownCell.xib */; };
+		EF171AE4747D860473D8D3435AC88402 /* FlexibleSteppedProgressBarTextLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3042663CD95F58E0F20580876FEF66 /* FlexibleSteppedProgressBarTextLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E68909EA8996D506C4E53F602EE04193 /* PBXContainerItemProxy */ = {
+		08F06354CDC742DA1973913D8B962FD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
-			remoteInfo = DropDown;
+			remoteGlobalIDString = 78F4573E2ECF38D5D1BE8361A331EE25;
+			remoteInfo = StepIndicator;
 		};
-		FF144A493E02B83BE72EBCD99C0E43A1 /* PBXContainerItemProxy */ = {
+		8332571ACC8225F3ACBCE3F74F629DCB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B04E8566792BB8A5B09C98FD0DDB0025;
 			remoteInfo = FlexibleSteppedProgressBar;
 		};
+		A6A948A56E4E4D61E593F4499A9B23A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
+		DFED907E53D7696CF4F25444A002DD75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B87404F0B104F557A92B6B952FFB90B3;
+			remoteInfo = "StepIndicator-StepIndicator";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		053444BD673D0EE07395490E7B65DE77 /* Pods-basicUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-basicUI-Info.plist"; sourceTree = "<group>"; };
-		0AA3A7A9C0695D3A9077789F89DA9BA4 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
 		114FF158AD91A9968AFFCBF01830B2E8 /* FlexibleSteppedProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlexibleSteppedProgressBar.framework; path = FlexibleSteppedProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1537A5BB9D798192536EADC286A8EDE7 /* FlexibleSteppedProgressBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexibleSteppedProgressBar.release.xcconfig; sourceTree = "<group>"; };
 		22A9A1FD5B05614CC39202C38CA4B85E /* Pods-basicUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-basicUI.release.xcconfig"; sourceTree = "<group>"; };
-		23A804562D7630FEAABA64BA9F874A9C /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
-		3002EA39EDCF4740EB4B31A37D1EB572 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
-		36985CDD91FC5C4AB094053B92844B9D /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
-		3C9F3DFCE8632E4DCCB0659C604531BE /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
-		421B87664D8783245A76B0403736FBA3 /* FlexibleSteppedProgressBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlexibleSteppedProgressBar-Info.plist"; sourceTree = "<group>"; };
-		46EAA813819C8E5ACB970553899A9AE2 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
-		589C07CF2C88C08C2AC707B80A7D0CDC /* FSPBPointExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPBPointExtension.swift; path = FlexibleSteppedProgressBar/Classes/FSPBPointExtension.swift; sourceTree = "<group>"; };
-		5B17934D24E93CDC9AEC141008C0F53A /* FlexibleSteppedProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexibleSteppedProgressBar.swift; path = FlexibleSteppedProgressBar/Classes/FlexibleSteppedProgressBar.swift; sourceTree = "<group>"; };
-		5EB4608AAFB0D9F582DD3BE5330A11F7 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
-		5FF9C4C0605A976AC77A1A10B4EF6591 /* FlexibleSteppedProgressBarTextLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexibleSteppedProgressBarTextLocation.swift; path = FlexibleSteppedProgressBar/Classes/FlexibleSteppedProgressBarTextLocation.swift; sourceTree = "<group>"; };
+		241D1F9F73201B568BA022E976749813 /* StepIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepIndicatorView.swift; path = StepIndicator/StepIndicatorView.swift; sourceTree = "<group>"; };
+		2C8881A3D00F5DFC21FF70E76B5191B9 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		372C45D80AB505368BC7FC9CADAC59B0 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		3C3042663CD95F58E0F20580876FEF66 /* FlexibleSteppedProgressBarTextLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexibleSteppedProgressBarTextLocation.swift; path = FlexibleSteppedProgressBar/Classes/FlexibleSteppedProgressBarTextLocation.swift; sourceTree = "<group>"; };
+		41AC281394AA17DCA1C8DD7E9F030E60 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		43103D28994032C669CEF2E79978F38A /* FSPBPointExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPBPointExtension.swift; path = FlexibleSteppedProgressBar/Classes/FSPBPointExtension.swift; sourceTree = "<group>"; };
+		44004C66909C1F1E3AF4C5014BD233B5 /* FlexibleSteppedProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexibleSteppedProgressBar-dummy.m"; sourceTree = "<group>"; };
+		4518A80574E5E86F0F714E5CAEF8BAF2 /* StepIndicator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepIndicator-umbrella.h"; sourceTree = "<group>"; };
+		4774E0E018C92CDBAA6982AB8299B7DB /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		4DBBA359F356DAACEAB47ECEB59E89D6 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		4FAF038C94EC943F5D0855115225E674 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		5289C27757AA72D1F43D99FE3C60D85A /* FlexibleSteppedProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexibleSteppedProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		59AA2A1F40C64F7873458805D9B7C37A /* StepIndicator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "StepIndicator-Info.plist"; sourceTree = "<group>"; };
+		5FC5CC8A9209FA9D0BA6EE2D94FCD29C /* StepIndicator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StepIndicator.modulemap; sourceTree = "<group>"; };
+		604786CFD77F4C45242AD1F769A8527B /* StepIndicator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StepIndicator-dummy.m"; sourceTree = "<group>"; };
 		619BFAF865F3AF2BEF73280EE9FE0AA1 /* Pods-basicUI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-basicUI-frameworks.sh"; sourceTree = "<group>"; };
+		641EC62AD5E431A434C65CA7D6EF937F /* StepIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StepIndicator.framework; path = StepIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE0F4195CA3AA9F537CD7B2FF7E6D6C /* Pods_basicUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_basicUI.framework; path = "Pods-basicUI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7826B130822DA10AE1D08C181833729B /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		7653BE97719DE9BB0946EF502379FAE6 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
 		7A6F3A1D40A4136B5D0B39D9F9ED64A2 /* Pods-basicUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-basicUI.modulemap"; sourceTree = "<group>"; };
+		7DF341AD2075C9F30C89ED07A06D4A45 /* StepIndicator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StepIndicator.release.xcconfig; sourceTree = "<group>"; };
+		7EC43CAD619E2F3BD11604446EA883DA /* StepIndicator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StepIndicator.debug.xcconfig; sourceTree = "<group>"; };
+		813EA46D02A1B40A30C9706C36856633 /* FSPBTextLayerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPBTextLayerExtension.swift; path = FlexibleSteppedProgressBar/Classes/FSPBTextLayerExtension.swift; sourceTree = "<group>"; };
+		839144460D0BD9DF184049C075A44672 /* FlexibleSteppedProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexibleSteppedProgressBar-umbrella.h"; sourceTree = "<group>"; };
 		85568CF716DE82C43219698F8140F030 /* Pods-basicUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-basicUI-acknowledgements.plist"; sourceTree = "<group>"; };
-		88A6B46A97AD10E989BCE79AFF091804 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
-		96C0B4DB8BC9EC9A62D2ACD9DC146495 /* FlexibleSteppedProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexibleSteppedProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		8647E75A84A9075408574104A3DB065F /* FlexibleSteppedProgressBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexibleSteppedProgressBar.debug.xcconfig; sourceTree = "<group>"; };
+		99B7815054619DFFC69C2200A12760D1 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
 		9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CA1A62F5C5E4140AF4FD647508F2303 /* FlexibleSteppedProgressBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexibleSteppedProgressBar.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1A93CFC37A39526F3ADA2F8B689388B /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
-		A2099B552CBFAA00B043E05D791F3F17 /* FSPBTextLayerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPBTextLayerExtension.swift; path = FlexibleSteppedProgressBar/Classes/FSPBTextLayerExtension.swift; sourceTree = "<group>"; };
-		ABBEB643E85B54F4EDFDD02145ED044B /* FlexibleSteppedProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexibleSteppedProgressBar-prefix.pch"; sourceTree = "<group>"; };
-		B3081FAD40BA3E6435174EA18F278AE9 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
-		B8228CDDAF31A8FBF09C7C52E2CE9D06 /* FlexibleSteppedProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexibleSteppedProgressBar-dummy.m"; sourceTree = "<group>"; };
+		A1E7C475AC546108AF38BA660B008870 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		AF252FD12FCC1DE0D22D4A3277DE1EA5 /* AnnularLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnnularLayer.swift; path = StepIndicator/AnnularLayer.swift; sourceTree = "<group>"; };
+		B4947447E4A73C69C7057EC8F63251BA /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		B4DCA87CDF9D03C03F4D5B49AD8E88D2 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		B76E69FB87EE97537FC6374E05548D90 /* StepIndicator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepIndicator-prefix.pch"; sourceTree = "<group>"; };
 		B9DF0E85E3EA884E8E0006A6A39C13F7 /* Pods-basicUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-basicUI.debug.xcconfig"; sourceTree = "<group>"; };
-		C32FDF4C522200CAFBBCF348CE6CB6FB /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		C2028EDD011789D5880F43F32119E9F3 /* FlexibleSteppedProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexibleSteppedProgressBar.modulemap; sourceTree = "<group>"; };
+		C2DC81FCE5E4D1D85F13F0C46728AB91 /* FlexibleSteppedProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexibleSteppedProgressBar.swift; path = FlexibleSteppedProgressBar/Classes/FlexibleSteppedProgressBar.swift; sourceTree = "<group>"; };
 		C46347DCEDAC38CC22F07AE8DDADD62A /* Pods-basicUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-basicUI-dummy.m"; sourceTree = "<group>"; };
-		C9FB85F50E914B04E1B08A256745E3EF /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		CD93B65BC276886EF678822653223AE9 /* StepIndicator.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = StepIndicator.bundle; path = "StepIndicator-StepIndicator.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D949C63D6B4A5A6CBF4AFC27A44E280F /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
-		DF4196E26B9423E75F45676FF261A5A0 /* FlexibleSteppedProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlexibleSteppedProgressBar.modulemap; sourceTree = "<group>"; };
+		DB861E13BA6DF5C9D4179FFF79453F6B /* ResourceBundle-StepIndicator-StepIndicator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-StepIndicator-StepIndicator-Info.plist"; sourceTree = "<group>"; };
+		E3AB894B2E975E369D86619ECBB6220E /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		E5A80A94CB0AC09166E0255B7C2F171C /* LineLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineLayer.swift; path = StepIndicator/LineLayer.swift; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EFBC4EE7FD6CA63D67D5C67B006FAFB0 /* Pods-basicUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-basicUI-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F267E79939B55312186849F6F1DC5B92 /* FlexibleSteppedProgressBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexibleSteppedProgressBar.debug.xcconfig; sourceTree = "<group>"; };
 		F7B58B93B8E03F6E1F107A9FF2AA9B02 /* Pods-basicUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-basicUI-umbrella.h"; sourceTree = "<group>"; };
+		F8B60BAE537A4BB5E32BC656E36D63F2 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		FC6A4F4DC5054D1160C8BB161883C55F /* FlexibleSteppedProgressBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlexibleSteppedProgressBar-Info.plist"; sourceTree = "<group>"; };
+		FE9F2044B594B2048339140CBABAAF78 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = StepIndicator/Media.xcassets; sourceTree = "<group>"; };
+		FEFF833A09DBF6A176C9396FEF210168 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03E80206BEB0D33193EE1545C5B9ED3B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7911D8DA9D046EA0E129464FFEF0F728 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0C761D5BDB590508E076C0A420277248 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,11 +136,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1001218A964483D6015F3FF20FB5B8C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65C18E46254D1F40BF057EC4CEE61D06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97080F281E675BD427E37B1C8EE772F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9727840973A9C2692E58F7089A7C243E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C99487C04757ECF4F73FA1D4519CFD6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83E6613A622EEEA0566DC41F718350D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1206FD6496DBD0928B6DF8A6D224E4E3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,16 +195,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		1170A3CBBDC5FF9881AAEFB41573653E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
-				114FF158AD91A9968AFFCBF01830B2E8 /* FlexibleSteppedProgressBar.framework */,
-				6BE0F4195CA3AA9F537CD7B2FF7E6D6C /* Pods_basicUI.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,37 +203,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		16AE6C1195A6A7BF4DB96A28710B9963 /* DropDown */ = {
+		18780F26AFFFE604E2E96E12AC403EF9 /* FlexibleSteppedProgressBar */ = {
 			isa = PBXGroup;
 			children = (
-				B3081FAD40BA3E6435174EA18F278AE9 /* DPDConstants.swift */,
-				46EAA813819C8E5ACB970553899A9AE2 /* DPDKeyboardListener.swift */,
-				D949C63D6B4A5A6CBF4AFC27A44E280F /* DPDUIView+Extension.swift */,
-				7826B130822DA10AE1D08C181833729B /* DropDown.swift */,
-				C32FDF4C522200CAFBBCF348CE6CB6FB /* DropDown+Appearance.swift */,
-				3C9F3DFCE8632E4DCCB0659C604531BE /* DropDownCell.swift */,
-				3C45DADA08398B0475CB180761B426EC /* Resources */,
-				DA0CBBFE5A2F601F46680E1385ED23D3 /* Support Files */,
+				C2DC81FCE5E4D1D85F13F0C46728AB91 /* FlexibleSteppedProgressBar.swift */,
+				3C3042663CD95F58E0F20580876FEF66 /* FlexibleSteppedProgressBarTextLocation.swift */,
+				43103D28994032C669CEF2E79978F38A /* FSPBPointExtension.swift */,
+				813EA46D02A1B40A30C9706C36856633 /* FSPBTextLayerExtension.swift */,
+				C084C32BACE0AC85F9E2A7DEB451A8D4 /* Support Files */,
 			);
-			name = DropDown;
-			path = DropDown;
+			name = FlexibleSteppedProgressBar;
+			path = FlexibleSteppedProgressBar;
 			sourceTree = "<group>";
 		};
-		3C45DADA08398B0475CB180761B426EC /* Resources */ = {
+		390499EBE121AB8B79C93AE7E02F64B3 /* StepIndicator */ = {
 			isa = PBXGroup;
 			children = (
-				36985CDD91FC5C4AB094053B92844B9D /* DropDownCell.xib */,
+				AF252FD12FCC1DE0D22D4A3277DE1EA5 /* AnnularLayer.swift */,
+				E5A80A94CB0AC09166E0255B7C2F171C /* LineLayer.swift */,
+				241D1F9F73201B568BA022E976749813 /* StepIndicatorView.swift */,
+				520E977DDB4FD9A9393FC82F73E3D5D9 /* Resources */,
+				BE1C0DDC123C9B01E2D69222BEF29DDC /* Support Files */,
+			);
+			name = StepIndicator;
+			path = StepIndicator;
+			sourceTree = "<group>";
+		};
+		520E977DDB4FD9A9393FC82F73E3D5D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F2044B594B2048339140CBABAAF78 /* Media.xcassets */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		576D5DEFA8291FC21D4E1A72DCCA756B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				16AE6C1195A6A7BF4DB96A28710B9963 /* DropDown */,
-				7B92E4D5991873A2DDF5424B7CE7CF36 /* FlexibleSteppedProgressBar */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
@@ -204,17 +246,96 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7B92E4D5991873A2DDF5424B7CE7CF36 /* FlexibleSteppedProgressBar */ = {
+		6F1D1D66B4946117E75C463723FEEDA0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B17934D24E93CDC9AEC141008C0F53A /* FlexibleSteppedProgressBar.swift */,
-				5FF9C4C0605A976AC77A1A10B4EF6591 /* FlexibleSteppedProgressBarTextLocation.swift */,
-				589C07CF2C88C08C2AC707B80A7D0CDC /* FSPBPointExtension.swift */,
-				A2099B552CBFAA00B043E05D791F3F17 /* FSPBTextLayerExtension.swift */,
-				D63565A66B6127E1ED6BB24271CFA0CD /* Support Files */,
+				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
+				114FF158AD91A9968AFFCBF01830B2E8 /* FlexibleSteppedProgressBar.framework */,
+				6BE0F4195CA3AA9F537CD7B2FF7E6D6C /* Pods_basicUI.framework */,
+				CD93B65BC276886EF678822653223AE9 /* StepIndicator.bundle */,
+				641EC62AD5E431A434C65CA7D6EF937F /* StepIndicator.framework */,
 			);
-			name = FlexibleSteppedProgressBar;
-			path = FlexibleSteppedProgressBar;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F5A0B9DDBD154040877CFCED061A543 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				FEFF833A09DBF6A176C9396FEF210168 /* DPDConstants.swift */,
+				B4947447E4A73C69C7057EC8F63251BA /* DPDKeyboardListener.swift */,
+				41AC281394AA17DCA1C8DD7E9F030E60 /* DPDUIView+Extension.swift */,
+				372C45D80AB505368BC7FC9CADAC59B0 /* DropDown.swift */,
+				4DBBA359F356DAACEAB47ECEB59E89D6 /* DropDown+Appearance.swift */,
+				E3AB894B2E975E369D86619ECBB6220E /* DropDownCell.swift */,
+				7FFF6CC39BDF9C94CE383206DC926EF1 /* Resources */,
+				A1439AD5761609F937C9C3895F03BCFF /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		7FFF6CC39BDF9C94CE383206DC926EF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4DCA87CDF9D03C03F4D5B49AD8E88D2 /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8609ABDC42722F6C970E00B5694D535B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F5A0B9DDBD154040877CFCED061A543 /* DropDown */,
+				18780F26AFFFE604E2E96E12AC403EF9 /* FlexibleSteppedProgressBar */,
+				390499EBE121AB8B79C93AE7E02F64B3 /* StepIndicator */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A1439AD5761609F937C9C3895F03BCFF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1E7C475AC546108AF38BA660B008870 /* DropDown.modulemap */,
+				4FAF038C94EC943F5D0855115225E674 /* DropDown-dummy.m */,
+				4774E0E018C92CDBAA6982AB8299B7DB /* DropDown-Info.plist */,
+				2C8881A3D00F5DFC21FF70E76B5191B9 /* DropDown-prefix.pch */,
+				F8B60BAE537A4BB5E32BC656E36D63F2 /* DropDown-umbrella.h */,
+				99B7815054619DFFC69C2200A12760D1 /* DropDown.debug.xcconfig */,
+				7653BE97719DE9BB0946EF502379FAE6 /* DropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		BE1C0DDC123C9B01E2D69222BEF29DDC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB861E13BA6DF5C9D4179FFF79453F6B /* ResourceBundle-StepIndicator-StepIndicator-Info.plist */,
+				5FC5CC8A9209FA9D0BA6EE2D94FCD29C /* StepIndicator.modulemap */,
+				604786CFD77F4C45242AD1F769A8527B /* StepIndicator-dummy.m */,
+				59AA2A1F40C64F7873458805D9B7C37A /* StepIndicator-Info.plist */,
+				B76E69FB87EE97537FC6374E05548D90 /* StepIndicator-prefix.pch */,
+				4518A80574E5E86F0F714E5CAEF8BAF2 /* StepIndicator-umbrella.h */,
+				7EC43CAD619E2F3BD11604446EA883DA /* StepIndicator.debug.xcconfig */,
+				7DF341AD2075C9F30C89ED07A06D4A45 /* StepIndicator.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/StepIndicator";
+			sourceTree = "<group>";
+		};
+		C084C32BACE0AC85F9E2A7DEB451A8D4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2028EDD011789D5880F43F32119E9F3 /* FlexibleSteppedProgressBar.modulemap */,
+				44004C66909C1F1E3AF4C5014BD233B5 /* FlexibleSteppedProgressBar-dummy.m */,
+				FC6A4F4DC5054D1160C8BB161883C55F /* FlexibleSteppedProgressBar-Info.plist */,
+				5289C27757AA72D1F43D99FE3C60D85A /* FlexibleSteppedProgressBar-prefix.pch */,
+				839144460D0BD9DF184049C075A44672 /* FlexibleSteppedProgressBar-umbrella.h */,
+				8647E75A84A9075408574104A3DB065F /* FlexibleSteppedProgressBar.debug.xcconfig */,
+				1537A5BB9D798192536EADC286A8EDE7 /* FlexibleSteppedProgressBar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlexibleSteppedProgressBar";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -222,45 +343,23 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				576D5DEFA8291FC21D4E1A72DCCA756B /* Pods */,
-				1170A3CBBDC5FF9881AAEFB41573653E /* Products */,
+				8609ABDC42722F6C970E00B5694D535B /* Pods */,
+				6F1D1D66B4946117E75C463723FEEDA0 /* Products */,
 				0817A1E75CB291CD4E0E1B99D53D94C2 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D63565A66B6127E1ED6BB24271CFA0CD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DF4196E26B9423E75F45676FF261A5A0 /* FlexibleSteppedProgressBar.modulemap */,
-				B8228CDDAF31A8FBF09C7C52E2CE9D06 /* FlexibleSteppedProgressBar-dummy.m */,
-				421B87664D8783245A76B0403736FBA3 /* FlexibleSteppedProgressBar-Info.plist */,
-				ABBEB643E85B54F4EDFDD02145ED044B /* FlexibleSteppedProgressBar-prefix.pch */,
-				96C0B4DB8BC9EC9A62D2ACD9DC146495 /* FlexibleSteppedProgressBar-umbrella.h */,
-				F267E79939B55312186849F6F1DC5B92 /* FlexibleSteppedProgressBar.debug.xcconfig */,
-				9CA1A62F5C5E4140AF4FD647508F2303 /* FlexibleSteppedProgressBar.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FlexibleSteppedProgressBar";
-			sourceTree = "<group>";
-		};
-		DA0CBBFE5A2F601F46680E1385ED23D3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5EB4608AAFB0D9F582DD3BE5330A11F7 /* DropDown.modulemap */,
-				23A804562D7630FEAABA64BA9F874A9C /* DropDown-dummy.m */,
-				A1A93CFC37A39526F3ADA2F8B689388B /* DropDown-Info.plist */,
-				0AA3A7A9C0695D3A9077789F89DA9BA4 /* DropDown-prefix.pch */,
-				3002EA39EDCF4740EB4B31A37D1EB572 /* DropDown-umbrella.h */,
-				C9FB85F50E914B04E1B08A256745E3EF /* DropDown.debug.xcconfig */,
-				88A6B46A97AD10E989BCE79AFF091804 /* DropDown.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DropDown";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		01896F94045E2377C9DF22DE387BBF3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065A499DECA29C5423CBD712D901F032 /* StepIndicator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2BB5683F7D1AA8FB2F94DA252A664DB8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,11 +376,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		803C286E7EAD07A7BC9000D7357FE19B /* Headers */ = {
+		DB5A68C31A41498B087F2F8D1F957C7D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A6E0A78272250746CB5F13926824F9 /* Pods-basicUI-umbrella.h in Headers */,
+				3097B546A7E3FB10BEBDCB850405120D /* Pods-basicUI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,22 +389,42 @@
 /* Begin PBXNativeTarget section */
 		58767A7076901E36A81B73043D6941C8 /* Pods-basicUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EEEF543022E29E7E596913F7E356E01D /* Build configuration list for PBXNativeTarget "Pods-basicUI" */;
+			buildConfigurationList = 79533B1B8EA9D7FB97BC983B22458F61 /* Build configuration list for PBXNativeTarget "Pods-basicUI" */;
 			buildPhases = (
-				803C286E7EAD07A7BC9000D7357FE19B /* Headers */,
-				5F89D6D9E6E49D5F4FD62A7E4BBAF14C /* Sources */,
-				03E80206BEB0D33193EE1545C5B9ED3B /* Frameworks */,
-				3DE30499903F1529711C768E6736E3EA /* Resources */,
+				DB5A68C31A41498B087F2F8D1F957C7D /* Headers */,
+				AFBF5BC30746EB066DF4D747BF72B792 /* Sources */,
+				65C18E46254D1F40BF057EC4CEE61D06 /* Frameworks */,
+				0D1D8E4A52CC3346C3E6F6A0298FB4D5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				149E2ED911758065E996D592C1CED784 /* PBXTargetDependency */,
-				9D19A56CC0452C2B08BDA6507FF1DF89 /* PBXTargetDependency */,
+				39BCBE9A0008F69079668BDDFD5C9EF6 /* PBXTargetDependency */,
+				5E7539AF1326F1419DE929F704A9023A /* PBXTargetDependency */,
+				95D515A4BCA07B62D141B2B5D3B998E1 /* PBXTargetDependency */,
 			);
 			name = "Pods-basicUI";
 			productName = "Pods-basicUI";
 			productReference = 6BE0F4195CA3AA9F537CD7B2FF7E6D6C /* Pods_basicUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78F4573E2ECF38D5D1BE8361A331EE25 /* StepIndicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A6FE7C50085382E85B168630A495EA3 /* Build configuration list for PBXNativeTarget "StepIndicator" */;
+			buildPhases = (
+				01896F94045E2377C9DF22DE387BBF3A /* Headers */,
+				CC7D165FD2F4808048EE5A15A569CB8D /* Sources */,
+				D83E6613A622EEEA0566DC41F718350D /* Frameworks */,
+				B77C3DE3A3ADBB3B9C6EA83150C3B4D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12B87EBDF68C36E54DDB42A171508744 /* PBXTargetDependency */,
+			);
+			name = StepIndicator;
+			productName = StepIndicator;
+			productReference = 641EC62AD5E431A434C65CA7D6EF937F /* StepIndicator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B04E8566792BB8A5B09C98FD0DDB0025 /* FlexibleSteppedProgressBar */ = {
@@ -325,6 +444,23 @@
 			productName = FlexibleSteppedProgressBar;
 			productReference = 114FF158AD91A9968AFFCBF01830B2E8 /* FlexibleSteppedProgressBar.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		B87404F0B104F557A92B6B952FFB90B3 /* StepIndicator-StepIndicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E5660A401263C279A1C1171BCB82E08 /* Build configuration list for PBXNativeTarget "StepIndicator-StepIndicator" */;
+			buildPhases = (
+				92A5F57F7F071218B3B7279837F5EE81 /* Sources */,
+				1001218A964483D6015F3FF20FB5B8C1 /* Frameworks */,
+				CDC17F86A82D59986C33889C975C94A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StepIndicator-StepIndicator";
+			productName = "StepIndicator-StepIndicator";
+			productReference = CD93B65BC276886EF678822653223AE9 /* StepIndicator.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
 			isa = PBXNativeTarget;
@@ -354,7 +490,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -362,18 +498,27 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1170A3CBBDC5FF9881AAEFB41573653E /* Products */;
+			productRefGroup = 6F1D1D66B4946117E75C463723FEEDA0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
 				B04E8566792BB8A5B09C98FD0DDB0025 /* FlexibleSteppedProgressBar */,
 				58767A7076901E36A81B73043D6941C8 /* Pods-basicUI */,
+				78F4573E2ECF38D5D1BE8361A331EE25 /* StepIndicator */,
+				B87404F0B104F557A92B6B952FFB90B3 /* StepIndicator-StepIndicator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0D1D8E4A52CC3346C3E6F6A0298FB4D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		101A1C268EB4A6486F269FB51CA36073 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -381,10 +526,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3DE30499903F1529711C768E6736E3EA /* Resources */ = {
+		B77C3DE3A3ADBB3B9C6EA83150C3B4D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97125B700545BB1CBA5E6BCF2F840C3D /* StepIndicator.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC17F86A82D59986C33889C975C94A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A1795C69CDDC39492971A25EA40742 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,14 +553,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5F89D6D9E6E49D5F4FD62A7E4BBAF14C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70DC2340F999813D08470D1577A84D7D /* Pods-basicUI-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8B32D762352EBD0B8E1D1E536F033BD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +562,32 @@
 				EF171AE4747D860473D8D3435AC88402 /* FlexibleSteppedProgressBarTextLocation.swift in Sources */,
 				2E9B4F0189FD79C11AE2B4B3BF8E6262 /* FSPBPointExtension.swift in Sources */,
 				8E0F7DCE2DEE997FBCCEBB3313A46C6D /* FSPBTextLayerExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A5F57F7F071218B3B7279837F5EE81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBF5BC30746EB066DF4D747BF72B792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52461795B33947634A9F9EC0A84790C5 /* Pods-basicUI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7D165FD2F4808048EE5A15A569CB8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4E803384D31E6FF6AABE4FF67E80A3 /* AnnularLayer.swift in Sources */,
+				3B15A3311292E0F7DDE53DCB535EE1D2 /* LineLayer.swift in Sources */,
+				E49990BCA7C7F7FA20BA83257849ECDE /* StepIndicator-dummy.m in Sources */,
+				15FFAC3AA2A4E3099C8A4FE3871C88B6 /* StepIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,21 +608,49 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		149E2ED911758065E996D592C1CED784 /* PBXTargetDependency */ = {
+		12B87EBDF68C36E54DDB42A171508744 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "StepIndicator-StepIndicator";
+			target = B87404F0B104F557A92B6B952FFB90B3 /* StepIndicator-StepIndicator */;
+			targetProxy = DFED907E53D7696CF4F25444A002DD75 /* PBXContainerItemProxy */;
+		};
+		39BCBE9A0008F69079668BDDFD5C9EF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DropDown;
 			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
-			targetProxy = E68909EA8996D506C4E53F602EE04193 /* PBXContainerItemProxy */;
+			targetProxy = A6A948A56E4E4D61E593F4499A9B23A3 /* PBXContainerItemProxy */;
 		};
-		9D19A56CC0452C2B08BDA6507FF1DF89 /* PBXTargetDependency */ = {
+		5E7539AF1326F1419DE929F704A9023A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlexibleSteppedProgressBar;
 			target = B04E8566792BB8A5B09C98FD0DDB0025 /* FlexibleSteppedProgressBar */;
-			targetProxy = FF144A493E02B83BE72EBCD99C0E43A1 /* PBXContainerItemProxy */;
+			targetProxy = 8332571ACC8225F3ACBCE3F74F629DCB /* PBXContainerItemProxy */;
+		};
+		95D515A4BCA07B62D141B2B5D3B998E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StepIndicator;
+			target = 78F4573E2ECF38D5D1BE8361A331EE25 /* StepIndicator */;
+			targetProxy = 08F06354CDC742DA1973913D8B962FD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		05C165AD85A600A8935B0499011745AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF341AD2075C9F30C89ED07A06D4A45 /* StepIndicator.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/StepIndicator";
+				IBSC_MODULE = StepIndicator;
+				INFOPLIST_FILE = "Target Support Files/StepIndicator/ResourceBundle-StepIndicator-StepIndicator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = StepIndicator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		087D8A18252416766B25947B639BE310 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -513,111 +713,7 @@
 			};
 			name = Release;
 		};
-		4A17D27FFBCE427192C281661D3F5767 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9FB85F50E914B04E1B08A256745E3EF /* DropDown.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
-				PRODUCT_MODULE_NAME = DropDown;
-				PRODUCT_NAME = DropDown;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		78501223C31CE88F29E288DC236A4088 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CA1A62F5C5E4140AF4FD647508F2303 /* FlexibleSteppedProgressBar.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar.modulemap";
-				PRODUCT_MODULE_NAME = FlexibleSteppedProgressBar;
-				PRODUCT_NAME = FlexibleSteppedProgressBar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8B28DAA7DDFFF9A20AD710664AC96ADD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88A6B46A97AD10E989BCE79AFF091804 /* DropDown.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
-				PRODUCT_MODULE_NAME = DropDown;
-				PRODUCT_NAME = DropDown;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9AFE73CAB7910889F3BD579F0A9EFB6B /* Release */ = {
+		1E42E94FD649D679C12CDFA7406555AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22A9A1FD5B05614CC39202C38CA4B85E /* Pods-basicUI.release.xcconfig */;
 			buildSettings = {
@@ -654,6 +750,232 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		41CCF712F59CD5C9975DA06FF8A3FABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9DF0E85E3EA884E8E0006A6A39C13F7 /* Pods-basicUI.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-basicUI/Pods-basicUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-basicUI/Pods-basicUI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A17D27FFBCE427192C281661D3F5767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99B7815054619DFFC69C2200A12760D1 /* DropDown.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		72F4E75DCE3A230A348E3C0002DF4A1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF341AD2075C9F30C89ED07A06D4A45 /* StepIndicator.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StepIndicator/StepIndicator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StepIndicator/StepIndicator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StepIndicator/StepIndicator.modulemap";
+				PRODUCT_MODULE_NAME = StepIndicator;
+				PRODUCT_NAME = StepIndicator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78501223C31CE88F29E288DC236A4088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1537A5BB9D798192536EADC286A8EDE7 /* FlexibleSteppedProgressBar.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar.modulemap";
+				PRODUCT_MODULE_NAME = FlexibleSteppedProgressBar;
+				PRODUCT_NAME = FlexibleSteppedProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83E3AAC010C4F4866DB37E62E1D3E1E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC43CAD619E2F3BD11604446EA883DA /* StepIndicator.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/StepIndicator";
+				IBSC_MODULE = StepIndicator;
+				INFOPLIST_FILE = "Target Support Files/StepIndicator/ResourceBundle-StepIndicator-StepIndicator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = StepIndicator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8B28DAA7DDFFF9A20AD710664AC96ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7653BE97719DE9BB0946EF502379FAE6 /* DropDown.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C6DEBB172E316832111094489C050959 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC43CAD619E2F3BD11604446EA883DA /* StepIndicator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StepIndicator/StepIndicator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StepIndicator/StepIndicator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StepIndicator/StepIndicator.modulemap";
+				PRODUCT_MODULE_NAME = StepIndicator;
+				PRODUCT_NAME = StepIndicator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		D37CD465EC03E96673A76466BB806A2C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -721,46 +1043,9 @@
 			};
 			name = Debug;
 		};
-		DA1DAFC26C3B7C3F872458DA67C7A291 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9DF0E85E3EA884E8E0006A6A39C13F7 /* Pods-basicUI.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-basicUI/Pods-basicUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-basicUI/Pods-basicUI.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		EEB6201C1F7807C95823282B32B1BD3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F267E79939B55312186849F6F1DC5B92 /* FlexibleSteppedProgressBar.debug.xcconfig */;
+			baseConfigurationReference = 8647E75A84A9075408574104A3DB065F /* FlexibleSteppedProgressBar.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -813,20 +1098,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4E5660A401263C279A1C1171BCB82E08 /* Build configuration list for PBXNativeTarget "StepIndicator-StepIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E3AAC010C4F4866DB37E62E1D3E1E9 /* Debug */,
+				05C165AD85A600A8935B0499011745AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79533B1B8EA9D7FB97BC983B22458F61 /* Build configuration list for PBXNativeTarget "Pods-basicUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41CCF712F59CD5C9975DA06FF8A3FABB /* Debug */,
+				1E42E94FD649D679C12CDFA7406555AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A6FE7C50085382E85B168630A495EA3 /* Build configuration list for PBXNativeTarget "StepIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6DEBB172E316832111094489C050959 /* Debug */,
+				72F4E75DCE3A230A348E3C0002DF4A1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EBED57D13F9A2559E14BCD92E7CFF597 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A17D27FFBCE427192C281661D3F5767 /* Debug */,
 				8B28DAA7DDFFF9A20AD710664AC96ADD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EEEF543022E29E7E596913F7E356E01D /* Build configuration list for PBXNativeTarget "Pods-basicUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA1DAFC26C3B7C3F872458DA67C7A291 /* Debug */,
-				9AFE73CAB7910889F3BD579F0A9EFB6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

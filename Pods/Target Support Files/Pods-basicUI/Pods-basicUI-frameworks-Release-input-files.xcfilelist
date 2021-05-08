@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-basicUI/Pods-basicUI-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
 ${BUILT_PRODUCTS_DIR}/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar.framework
+${BUILT_PRODUCTS_DIR}/StepIndicator/StepIndicator.framework
