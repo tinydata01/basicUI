@@ -7,5 +7,6 @@ target 'basicUI' do
 
   # Pods for basicUI
 pod 'DropDown'
+pod "FlexibleSteppedProgressBar"
 
 end
