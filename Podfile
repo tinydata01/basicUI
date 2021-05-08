@@ -7,5 +7,5 @@ target 'basicUI' do
 
   # Pods for basicUI
 pod 'DropDown'
-
+pod 'iOSDropDown', '~> 0.3'
 end
