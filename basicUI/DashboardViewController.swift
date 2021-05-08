@@ -21,6 +21,9 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         viewWillDisappear(true)
+        fromLocation.underlined(color: .darkGray)
+        toLocation.underlined(color: .darkGray)
+        dateTxt.underlined(color: .darkGray)
         
         let backgroundImage = UIImage.init(named: "LaunchScreen-AspectFill.png")
             let backgroundImageView = UIImageView.init(frame: self.view.frame)
