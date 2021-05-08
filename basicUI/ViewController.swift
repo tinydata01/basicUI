@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet var _email: UITextField!
     
@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "loginBackground.png")!)    // 1- this will add it with the default
     self.addBackground()
         
+        
+                
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,6 +55,7 @@ func addLeftImageTo(txtField:UITextField, andImage img: UIImage){
         
     let imageViewBackground = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
     imageViewBackground.image = UIImage(named: "loginBackground")
+        
 
     // you can change the content mode:
         imageViewBackground.contentMode = UIView.ContentMode.scaleAspectFill
@@ -62,4 +65,3 @@ func addLeftImageTo(txtField:UITextField, andImage img: UIImage){
 }
      
 }
-

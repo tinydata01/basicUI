@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import iOSDropDown
 
 class DashboardViewController: UIViewController {
+    @IBOutlet var dateTxt: UITextField!
+    let datePicker = UIDatePicker()
+   
+   
+    @IBOutlet var fromLocation: DropDown!
+    
+    @IBOutlet var toLocation: DropDown!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         viewWillDisappear(true)
+        
         let backgroundImage = UIImage.init(named: "LaunchScreen-AspectFill.png")
             let backgroundImageView = UIImageView.init(frame: self.view.frame)
 
@@ -20,6 +29,30 @@ class DashboardViewController: UIViewController {
         backgroundImageView.contentMode = .scaleToFill
 
             self.view.insertSubview(backgroundImageView, at: 0)
+        createDatePicker()
+       fromLocation.optionArray = ["option1", "option-2", "Option-3"]
+       fromLocation.optionIds = [1,23,54,22]
+        
+        toLocation.optionArray = ["option1", "option-2", "Option-3"]
+        toLocation.optionIds = [1,23,54,22]    }
+    
+    func createDatePicker(){
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        //barbutton
+        let doneBtn =  UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+        toolbar.setItems([doneBtn], animated: true)
+        //assign toolbar
+        dateTxt.inputAccessoryView = toolbar
+        //assign date picket to the text field
+        
+        dateTxt.inputView = datePicker
+        
+        
+        datePicker.datePickerMode = .date
+        
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -29,5 +62,15 @@ class DashboardViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    @objc func donePressed(){
+        //formatter
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        dateTxt.text = formatter.string(from:datePicker.date)
+        self.view.endEditing(true)
     }
 }
