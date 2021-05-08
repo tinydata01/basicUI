@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		AD410A0D2645923B00AA0C54 /* VesselScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410A0C2645923B00AA0C54 /* VesselScheduleViewController.swift */; };
 		AD410A102645924B00AA0C54 /* TrackShipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410A0F2645924B00AA0C54 /* TrackShipmentViewController.swift */; };
 		AD410A132645925900AA0C54 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410A122645925900AA0C54 /* DashboardViewController.swift */; };
+		ADA8016B264704B900F3BC71 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8016A264704B900F3BC71 /* CardCell.swift */; };
 		ADD46DB0264586160015D9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD46DAF264586160015D9CB /* Main.storyboard */; };
 		B161B3E22A7E33C7CC6106A1 /* Pods_basicUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E39B1577B0EDF50FD526A5 /* Pods_basicUI.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		AD410A0C2645923B00AA0C54 /* VesselScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselScheduleViewController.swift; sourceTree = "<group>"; };
 		AD410A0F2645924B00AA0C54 /* TrackShipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackShipmentViewController.swift; sourceTree = "<group>"; };
 		AD410A122645925900AA0C54 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		ADA8016A264704B900F3BC71 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		ADD46DAF264586160015D9CB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B97BB96ECC0E3EF8687810DA /* Pods-basicUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basicUI.release.xcconfig"; path = "Target Support Files/Pods-basicUI/Pods-basicUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 				AD410A0F2645924B00AA0C54 /* TrackShipmentViewController.swift */,
 				AD410A122645925900AA0C54 /* DashboardViewController.swift */,
 				8BB38094264659030055BA43 /* VesselSearchViewController.swift */,
+				ADA8016A264704B900F3BC71 /* CardCell.swift */,
 			);
 			path = basicUI;
 			sourceTree = "<group>";
@@ -103,7 +106,6 @@
 				40C36E06C535F6A9A054AAF3 /* Pods-basicUI.debug.xcconfig */,
 				B97BB96ECC0E3EF8687810DA /* Pods-basicUI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -226,6 +228,7 @@
 				371B360D261A464700365F20 /* ViewController.swift in Sources */,
 				AD410A132645925900AA0C54 /* DashboardViewController.swift in Sources */,
 				371B3609261A464700365F20 /* AppDelegate.swift in Sources */,
+				ADA8016B264704B900F3BC71 /* CardCell.swift in Sources */,
 				AD410A102645924B00AA0C54 /* TrackShipmentViewController.swift in Sources */,
 				8BB38095264659030055BA43 /* VesselSearchViewController.swift in Sources */,
 				371B360B261A464700365F20 /* SceneDelegate.swift in Sources */,
