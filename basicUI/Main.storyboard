@@ -241,12 +241,6 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="hamburger_white"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vessel Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84m-UP-nqi">
-                                <rect key="frame" x="20" y="108" width="226" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDb-ju-Kf9">
                                 <rect key="frame" x="301" y="108" width="33" height="30"/>
                                 <constraints>
@@ -263,7 +257,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Searched for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ce-so-fyD">
-                                <rect key="frame" x="133" y="186.5" width="196" height="32"/>
+                                <rect key="frame" x="133" y="187.5" width="196" height="31"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -272,13 +266,16 @@
                                 <rect key="frame" x="-2" y="278.5" width="214" height="110"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AEJEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCB-oP-Cy1">
-                                <rect key="frame" x="50" y="391.5" width="74.5" height="30"/>
+                                <rect key="frame" x="50" y="392" width="84" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jabel Ali" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ce2-Qo-ZAB">
                                 <rect key="frame" x="50" y="421.5" width="73.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73.5" id="972-d1-ToI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -312,9 +309,8 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yBI-RO-2hG">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yBI-RO-2hG">
                                 <rect key="frame" x="0.0" y="526" width="413" height="370"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cardCell" id="8E3-e4-Ypg">
@@ -333,15 +329,24 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BO-B9-Wdx">
+                                <rect key="frame" x="20" y="108" width="248" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title=" Vessel Schedule" image="back"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AoJ-b0-xhb"/>
                         <color key="backgroundColor" name="babyBlueColor"/>
                         <constraints>
+                            <constraint firstItem="1Ce-so-fyD" firstAttribute="centerY" secondItem="BM7-aR-PVg" secondAttribute="centerY" id="0U0-O8-sbR"/>
+                            <constraint firstItem="yBI-RO-2hG" firstAttribute="top" secondItem="V7J-Li-m9c" secondAttribute="bottom" constant="8" symbolic="YES" id="6Eg-ZF-N0s"/>
                             <constraint firstItem="4gm-fy-c9u" firstAttribute="leading" secondItem="AoJ-b0-xhb" secondAttribute="leading" constant="-2" id="6Ej-E3-HPJ"/>
                             <constraint firstItem="4gm-fy-c9u" firstAttribute="top" secondItem="1Ce-so-fyD" secondAttribute="bottom" constant="60" id="6uV-GB-W5j"/>
                             <constraint firstItem="YKB-Fz-p7A" firstAttribute="top" secondItem="uUO-7k-elP" secondAttribute="top" id="9ht-hQ-tDK"/>
                             <constraint firstItem="AJk-0l-q3r" firstAttribute="leading" secondItem="AoJ-b0-xhb" secondAttribute="leading" constant="199" id="B9z-Tu-a1f"/>
                             <constraint firstAttribute="trailing" secondItem="AJk-0l-q3r" secondAttribute="trailing" constant="1" id="Brv-ux-VPc"/>
+                            <constraint firstItem="yBI-RO-2hG" firstAttribute="leading" secondItem="YKB-Fz-p7A" secondAttribute="leading" id="CEN-7X-sOt"/>
+                            <constraint firstItem="7BO-B9-Wdx" firstAttribute="top" secondItem="AoJ-b0-xhb" secondAttribute="top" constant="20" id="CkK-G5-EB4"/>
                             <constraint firstItem="KzW-3q-SFk" firstAttribute="top" secondItem="uUO-7k-elP" secondAttribute="topMargin" constant="235" id="DHx-Sc-iJH"/>
                             <constraint firstAttribute="trailing" secondItem="V7J-Li-m9c" secondAttribute="trailing" constant="20" id="Fl5-vB-XJh"/>
                             <constraint firstItem="vCB-oP-Cy1" firstAttribute="leading" secondItem="AoJ-b0-xhb" secondAttribute="leading" constant="50" id="Hs1-du-i4F"/>
@@ -351,22 +356,25 @@
                             <constraint firstItem="AoJ-b0-xhb" firstAttribute="trailing" secondItem="BM7-aR-PVg" secondAttribute="trailing" constant="20" id="KHB-aB-2RW"/>
                             <constraint firstItem="AoJ-b0-xhb" firstAttribute="trailing" secondItem="YKB-Fz-p7A" secondAttribute="trailing" id="MlT-Hd-LwC"/>
                             <constraint firstItem="URO-jN-PPc" firstAttribute="leading" secondItem="nDb-ju-Kf9" secondAttribute="trailing" constant="30" id="Nx6-eM-klV"/>
-                            <constraint firstItem="1Ce-so-fyD" firstAttribute="top" secondItem="84m-UP-nqi" secondAttribute="bottom" constant="40" id="Q2Y-OE-dUX"/>
                             <constraint firstItem="M1d-MK-5ss" firstAttribute="top" secondItem="AoJ-b0-xhb" secondAttribute="top" constant="275" id="QPX-mh-LH4"/>
+                            <constraint firstItem="AJk-0l-q3r" firstAttribute="top" secondItem="BM7-aR-PVg" secondAttribute="bottom" constant="50.5" id="SrY-L5-O0m"/>
                             <constraint firstItem="Ce2-Qo-ZAB" firstAttribute="top" secondItem="vCB-oP-Cy1" secondAttribute="bottom" id="Suo-dE-UFp"/>
+                            <constraint firstItem="AJk-0l-q3r" firstAttribute="trailing" secondItem="yBI-RO-2hG" secondAttribute="trailing" id="TsZ-Ib-sNG"/>
                             <constraint firstItem="AJk-0l-q3r" firstAttribute="top" secondItem="1Ce-so-fyD" secondAttribute="bottom" constant="60" id="UL5-Gn-3o3"/>
                             <constraint firstItem="V7J-Li-m9c" firstAttribute="leading" secondItem="AoJ-b0-xhb" secondAttribute="leading" constant="20" id="Vd6-Xh-CP8"/>
-                            <constraint firstItem="84m-UP-nqi" firstAttribute="top" secondItem="AoJ-b0-xhb" secondAttribute="top" constant="20" id="VvQ-hg-MwE"/>
                             <constraint firstItem="b8L-Mk-OdC" firstAttribute="top" secondItem="Ihd-9v-jTz" secondAttribute="bottom" id="aVv-Mt-xrB"/>
+                            <constraint firstAttribute="bottom" secondItem="yBI-RO-2hG" secondAttribute="bottom" id="anY-13-PHt"/>
                             <constraint firstItem="BM7-aR-PVg" firstAttribute="leading" secondItem="1Ce-so-fyD" secondAttribute="trailing" constant="15" id="deH-b1-jj5"/>
+                            <constraint firstItem="1Ce-so-fyD" firstAttribute="top" secondItem="7BO-B9-Wdx" secondAttribute="bottom" constant="39.5" id="dxO-rg-sEZ"/>
                             <constraint firstItem="AoJ-b0-xhb" firstAttribute="trailing" secondItem="4gm-fy-c9u" secondAttribute="trailing" constant="202" id="e5J-48-Fbg"/>
                             <constraint firstItem="Ihd-9v-jTz" firstAttribute="top" secondItem="AJk-0l-q3r" secondAttribute="bottom" constant="3" id="eak-Sl-MIh"/>
                             <constraint firstItem="b8L-Mk-OdC" firstAttribute="leading" secondItem="Ihd-9v-jTz" secondAttribute="leading" id="gDG-dk-1ON"/>
+                            <constraint firstItem="7BO-B9-Wdx" firstAttribute="leading" secondItem="uUO-7k-elP" secondAttribute="leading" constant="20" id="i51-VD-dEK"/>
                             <constraint firstItem="M1d-MK-5ss" firstAttribute="centerX" secondItem="uUO-7k-elP" secondAttribute="centerX" id="jG3-7Q-WIW"/>
+                            <constraint firstItem="vCB-oP-Cy1" firstAttribute="centerX" secondItem="Ce2-Qo-ZAB" secondAttribute="centerX" constant="5.25" id="jnX-AV-umF"/>
                             <constraint firstItem="vCB-oP-Cy1" firstAttribute="top" secondItem="4gm-fy-c9u" secondAttribute="bottom" constant="3" id="lOK-zj-Dec"/>
                             <constraint firstItem="AoJ-b0-xhb" firstAttribute="trailing" secondItem="URO-jN-PPc" secondAttribute="trailing" constant="20" id="lWT-iN-s9v"/>
                             <constraint firstItem="AoJ-b0-xhb" firstAttribute="trailing" secondItem="Ihd-9v-jTz" secondAttribute="trailing" constant="63" id="mJU-RT-Nwq"/>
-                            <constraint firstItem="84m-UP-nqi" firstAttribute="leading" secondItem="AoJ-b0-xhb" secondAttribute="leading" constant="20" id="mk8-XA-sda"/>
                             <constraint firstItem="V7J-Li-m9c" firstAttribute="top" secondItem="YKB-Fz-p7A" secondAttribute="bottom" constant="20" id="rAb-Ft-9uT"/>
                             <constraint firstItem="KzW-3q-SFk" firstAttribute="centerX" secondItem="uUO-7k-elP" secondAttribute="centerX" id="sco-yi-ckW"/>
                             <constraint firstItem="Ce2-Qo-ZAB" firstAttribute="leading" secondItem="AoJ-b0-xhb" secondAttribute="leading" constant="50" id="tke-a2-VuV"/>
@@ -381,7 +389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDr-O4-ItB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4413" y="397"/>
+            <point key="canvasLocation" x="-4413.04347826087" y="396.42857142857139"/>
         </scene>
         <!--Track Shipment View Controller-->
         <scene sceneID="0O3-20-9K0">
@@ -543,6 +551,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="15" height="26"/>
         <image name="bg2" width="1242" height="2208"/>
         <image name="cargo" width="980" height="980"/>
         <image name="coastal" width="61" height="43"/>

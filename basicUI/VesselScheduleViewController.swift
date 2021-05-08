@@ -17,7 +17,10 @@ class VesselScheduleViewController: UIViewController, UITableViewDataSource, UIT
         return UITableViewCell()
     }
     
-
+    func unwindViewController() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
