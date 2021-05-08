@@ -36,7 +36,7 @@
                                     <segue destination="RUD-fd-6dx" kind="show" id="3HS-X6-Gzc"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UT4-Qe-Ixr">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UT4-Qe-Ixr">
                                 <rect key="frame" x="57" y="338" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="KX3-IV-eG2"/>
@@ -153,7 +153,7 @@
                                 </constraints>
                                 <state key="normal" title=" " backgroundImage="findvesselschedules"/>
                                 <connections>
-                                    <segue destination="VVm-J7-hoH" kind="show" id="Vy8-b1-SOt"/>
+                                    <segue destination="VVm-J7-hoH" kind="show" id="p74-ja-FpR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vessel Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hh-J7-pSS">
@@ -219,62 +219,23 @@
         <scene sceneID="nVP-Hb-At2">
             <objects>
                 <viewController id="VVm-J7-hoH" customClass="VesselScheduleViewController" customModule="basicUI" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iTy-MP-c8w">
+                    <view key="view" contentMode="scaleAspectFit" id="uUO-7k-elP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ha1-eg-18n">
-                                <rect key="frame" x="0.0" y="88" width="414" height="500"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vesselschedule" translatesAutoresizingMaskIntoConstraints="NO" id="15z-2N-l1M">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vessel Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOM-LE-2mJ">
-                                        <rect key="frame" x="20" y="30" width="243" height="39"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tK0-o2-2Zo">
-                                        <rect key="frame" x="364" y="30" width="30" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="JIw-in-kK7"/>
-                                            <constraint firstAttribute="width" constant="30" id="uUl-ob-OQk"/>
-                                        </constraints>
-                                        <state key="normal" title="Button" image="hamburger_white"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYp-jw-mvy">
-                                        <rect key="frame" x="306" y="30" width="33" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="33" id="AnV-PP-bEW"/>
-                                            <constraint firstAttribute="height" constant="30" id="I7Y-Pv-yy4"/>
-                                        </constraints>
-                                        <state key="normal" title="Button" image="notification_white"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vesselschedule" translatesAutoresizingMaskIntoConstraints="NO" id="YKB-Fz-p7A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="15z-2N-l1M" secondAttribute="bottom" id="8st-jb-tBb"/>
-                                    <constraint firstItem="15z-2N-l1M" firstAttribute="top" secondItem="ha1-eg-18n" secondAttribute="top" id="9YM-e6-rK2"/>
-                                    <constraint firstItem="GOM-LE-2mJ" firstAttribute="leading" secondItem="ha1-eg-18n" secondAttribute="leading" constant="20" id="EGg-s6-pMk"/>
-                                    <constraint firstItem="OYp-jw-mvy" firstAttribute="leading" secondItem="GOM-LE-2mJ" secondAttribute="trailing" constant="43" id="Jtk-bz-6wT"/>
-                                    <constraint firstItem="OYp-jw-mvy" firstAttribute="top" secondItem="ha1-eg-18n" secondAttribute="top" constant="30" id="Szp-d7-G8M"/>
-                                    <constraint firstItem="tK0-o2-2Zo" firstAttribute="leading" secondItem="OYp-jw-mvy" secondAttribute="trailing" constant="25" id="XTp-Mi-pBv"/>
-                                    <constraint firstAttribute="trailing" secondItem="15z-2N-l1M" secondAttribute="trailing" id="YIN-uu-Org"/>
-                                    <constraint firstItem="15z-2N-l1M" firstAttribute="leading" secondItem="ha1-eg-18n" secondAttribute="leading" id="pIs-zU-XXJ"/>
-                                    <constraint firstItem="GOM-LE-2mJ" firstAttribute="top" secondItem="ha1-eg-18n" secondAttribute="top" constant="30" id="q7c-Ve-rzW"/>
-                                    <constraint firstItem="tK0-o2-2Zo" firstAttribute="top" secondItem="ha1-eg-18n" secondAttribute="top" constant="30" id="qzG-RE-mGH"/>
-                                    <constraint firstAttribute="trailing" secondItem="tK0-o2-2Zo" secondAttribute="trailing" constant="20" id="u0d-mU-TJj"/>
-                                    <constraint firstAttribute="height" constant="500" id="yLF-pT-XNN"/>
+                                    <constraint firstAttribute="height" constant="500" id="C3R-dW-4cK"/>
                                 </constraints>
-                            </view>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="c1y-3v-vaB"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <viewLayoutGuide key="safeArea" id="AoJ-b0-xhb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ha1-eg-18n" firstAttribute="leading" secondItem="c1y-3v-vaB" secondAttribute="leading" id="Gzi-tU-fK2"/>
-                            <constraint firstItem="ha1-eg-18n" firstAttribute="top" secondItem="c1y-3v-vaB" secondAttribute="top" id="U88-Oh-sMk"/>
-                            <constraint firstItem="c1y-3v-vaB" firstAttribute="trailing" secondItem="ha1-eg-18n" secondAttribute="trailing" id="ZCD-tT-0Dc"/>
+                            <constraint firstItem="YKB-Fz-p7A" firstAttribute="top" secondItem="uUO-7k-elP" secondAttribute="top" id="9ht-hQ-tDK"/>
+                            <constraint firstItem="AoJ-b0-xhb" firstAttribute="trailing" secondItem="YKB-Fz-p7A" secondAttribute="trailing" id="MlT-Hd-LwC"/>
+                            <constraint firstItem="YKB-Fz-p7A" firstAttribute="leading" secondItem="AoJ-b0-xhb" secondAttribute="leading" id="vND-Ho-Be1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Us1-Ox-tQZ"/>
@@ -454,6 +415,7 @@
         <image name="notification_white" width="37" height="40"/>
         <image name="search_white" width="28" height="28"/>
         <image name="tracking-form" width="750" height="166"/>
+        <image name="vesselschedule" width="750" height="496"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -465,9 +427,6 @@
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

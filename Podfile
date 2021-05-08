@@ -6,5 +6,6 @@ target 'basicUI' do
   use_frameworks!
 
   # Pods for basicUI
+pod 'DropDown'
 
 end
