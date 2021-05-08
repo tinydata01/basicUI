@@ -8,11 +8,22 @@
 
 import UIKit
 
-class VesselScheduleViewController: UIViewController {
+class VesselScheduleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         viewWillDisappear(true)
+        tableView.dataSource = self
+        tableView.delegate = self
         // Do any additional setup after loading the view.
     }
     
