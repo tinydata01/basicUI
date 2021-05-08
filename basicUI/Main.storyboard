@@ -181,15 +181,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashboard" translatesAutoresizingMaskIntoConstraints="NO" id="f00-Kb-gfg">
-                                <rect key="frame" x="70" y="315" width="60" height="130"/>
+                                <rect key="frame" x="39" y="315" width="60" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="5Zc-bo-oCU"/>
                                     <constraint firstAttribute="width" constant="60" id="ncF-cV-tDo"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0IT-qL-eF9">
+                                <rect key="frame" x="57" y="500" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="08Z-7Y-GzS"/>
+                                    <constraint firstAttribute="width" constant="300" id="nlC-6d-gNV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="0IT-qL-eF9" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="412" id="0rX-fK-Rxa"/>
                             <constraint firstItem="q5t-Ly-O6b" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="2pD-ci-BM5"/>
                             <constraint firstItem="rTr-3i-Tyt" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="48a-JX-7S4"/>
                             <constraint firstAttribute="trailing" secondItem="rTr-3i-Tyt" secondAttribute="trailing" constant="30" id="Ccz-FE-P9M"/>
@@ -198,23 +208,27 @@
                             <constraint firstItem="rTr-3i-Tyt" firstAttribute="leading" secondItem="9Le-3l-gVS" secondAttribute="trailing" constant="30" id="Rjh-eA-OmD"/>
                             <constraint firstItem="NSd-kx-KZF" firstAttribute="centerX" secondItem="hRt-4d-6Dw" secondAttribute="centerX" id="Utq-oz-wN8"/>
                             <constraint firstItem="9Le-3l-gVS" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="Whz-0K-R7F"/>
-                            <constraint firstItem="f00-Kb-gfg" firstAttribute="leading" secondItem="hHt-Dx-pjD" secondAttribute="leading" constant="70" id="XIB-B6-zRa"/>
+                            <constraint firstItem="f00-Kb-gfg" firstAttribute="leading" secondItem="hHt-Dx-pjD" secondAttribute="leading" constant="39" id="XIB-B6-zRa"/>
                             <constraint firstItem="f00-Kb-gfg" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="227" id="Xlq-KF-zic"/>
                             <constraint firstItem="Fai-Uo-cTD" firstAttribute="top" secondItem="q5t-Ly-O6b" secondAttribute="bottom" constant="80" id="ZWR-oo-HHg"/>
                             <constraint firstItem="1hh-J7-pSS" firstAttribute="top" secondItem="Fai-Uo-cTD" secondAttribute="bottom" constant="3" id="bGf-p2-QcE"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="NSd-kx-KZF" secondAttribute="trailing" constant="26" id="caE-cX-Ghm"/>
                             <constraint firstItem="hRt-4d-6Dw" firstAttribute="leading" secondItem="Fai-Uo-cTD" secondAttribute="trailing" constant="70" id="ma0-BW-gKo"/>
                             <constraint firstItem="NSd-kx-KZF" firstAttribute="top" secondItem="hRt-4d-6Dw" secondAttribute="bottom" constant="3" id="nMW-XF-VRW"/>
+                            <constraint firstItem="0IT-qL-eF9" firstAttribute="centerX" secondItem="x1E-uZ-dFv" secondAttribute="centerX" id="oIP-HR-aTa"/>
                             <constraint firstItem="hRt-4d-6Dw" firstAttribute="top" secondItem="rTr-3i-Tyt" secondAttribute="bottom" constant="80" id="s2Y-ed-ZhC"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="hRt-4d-6Dw" secondAttribute="trailing" constant="50" id="w53-eH-DxN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hHt-Dx-pjD"/>
                     </view>
                     <navigationItem key="navigationItem" id="yi7-Mn-oWh"/>
+                    <connections>
+                        <outlet property="dateTxt" destination="0IT-qL-eF9" id="UWN-iU-rPn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrv-4E-NXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3871" y="-346"/>
+            <point key="canvasLocation" x="-3871.0144927536235" y="-346.20535714285711"/>
         </scene>
         <!--Vessel Schedule View Controller-->
         <scene sceneID="nVP-Hb-At2">
