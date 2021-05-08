@@ -333,6 +333,9 @@
                                 <rect key="frame" x="20" y="108" width="248" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title=" Vessel Schedule" image="back"/>
+                                <connections>
+                                    <action selector="backNavigation:" destination="VVm-J7-hoH" eventType="touchUpInside" id="dgd-Rk-hFI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AoJ-b0-xhb"/>
@@ -436,15 +439,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="fgJ-1N-dAK">
                                 <rect key="frame" x="0.0" y="178" width="414" height="718"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Shipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jep-BK-BOM">
-                                <rect key="frame" x="40" y="104" width="200" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="GGb-rE-wyO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="hamburger_white" translatesAutoresizingMaskIntoConstraints="NO" id="67F-gq-N4W">
                                 <rect key="frame" x="377" y="96" width="22" height="22"/>
                                 <constraints>
@@ -493,21 +487,27 @@
                                     <action selector="trackButton:" destination="fUa-Y5-i6N" eventType="touchUpInside" id="YGZ-2Y-hor"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FG-sE-8oR">
+                                <rect key="frame" x="20" y="96" width="157" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" Track Shipment" image="back"/>
+                                <connections>
+                                    <action selector="backNavigation:" destination="fUa-Y5-i6N" eventType="touchUpInside" id="SFU-jd-w2U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dQd-UZ-Bpx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dQd-UZ-Bpx" firstAttribute="trailing" secondItem="qVc-Vs-UqH" secondAttribute="trailing" constant="40" id="27P-yt-daZ"/>
-                            <constraint firstItem="jep-BK-BOM" firstAttribute="top" secondItem="dQd-UZ-Bpx" secondAttribute="top" constant="16" id="4kh-qn-LKS"/>
                             <constraint firstItem="ocy-sj-NHH" firstAttribute="trailing" secondItem="dQd-UZ-Bpx" secondAttribute="trailing" id="523-yG-CFM"/>
                             <constraint firstItem="qXC-DA-wmh" firstAttribute="top" secondItem="ocy-sj-NHH" secondAttribute="bottom" constant="45" id="6bw-5b-iit"/>
                             <constraint firstAttribute="bottom" secondItem="fgJ-1N-dAK" secondAttribute="bottom" id="6w5-gJ-iPp"/>
                             <constraint firstItem="67F-gq-N4W" firstAttribute="top" secondItem="dQd-UZ-Bpx" secondAttribute="top" constant="8" id="7kK-hU-h0p"/>
                             <constraint firstItem="ocy-sj-NHH" firstAttribute="top" secondItem="lJq-yi-sZz" secondAttribute="top" id="8fF-L0-OUQ"/>
                             <constraint firstItem="dQd-UZ-Bpx" firstAttribute="trailing" secondItem="67F-gq-N4W" secondAttribute="trailing" constant="15" id="GNT-BM-XNj"/>
-                            <constraint firstItem="jep-BK-BOM" firstAttribute="leading" secondItem="dQd-UZ-Bpx" secondAttribute="leading" constant="40" id="IUW-lA-ELz"/>
                             <constraint firstItem="qXC-DA-wmh" firstAttribute="leading" secondItem="dQd-UZ-Bpx" secondAttribute="leading" constant="50" id="J6o-aT-hHi"/>
-                            <constraint firstItem="fgJ-1N-dAK" firstAttribute="top" secondItem="jep-BK-BOM" secondAttribute="bottom" constant="52" id="MEt-j2-GZh"/>
+                            <constraint firstItem="0FG-sE-8oR" firstAttribute="leading" secondItem="lJq-yi-sZz" secondAttribute="leading" constant="20" id="KLl-IQ-M94"/>
                             <constraint firstItem="dQd-UZ-Bpx" firstAttribute="trailing" secondItem="fgJ-1N-dAK" secondAttribute="trailing" id="Nia-YY-D1L"/>
                             <constraint firstItem="67F-gq-N4W" firstAttribute="leading" secondItem="m2V-dJ-Cyi" secondAttribute="trailing" constant="18" id="PCa-Kb-Dqc"/>
                             <constraint firstItem="DF8-Fr-bvm" firstAttribute="centerX" secondItem="ocy-sj-NHH" secondAttribute="centerX" id="Uj5-ZX-U7j"/>
@@ -520,6 +520,7 @@
                             <constraint firstItem="fgJ-1N-dAK" firstAttribute="leading" secondItem="dQd-UZ-Bpx" secondAttribute="leading" id="qa5-FS-Epz"/>
                             <constraint firstItem="Qu3-uw-bKr" firstAttribute="top" secondItem="dQd-UZ-Bpx" secondAttribute="top" constant="8" id="qgT-43-IeY"/>
                             <constraint firstItem="ocy-sj-NHH" firstAttribute="leading" secondItem="dQd-UZ-Bpx" secondAttribute="leading" id="rfp-vA-oZF"/>
+                            <constraint firstItem="0FG-sE-8oR" firstAttribute="top" secondItem="dQd-UZ-Bpx" secondAttribute="top" constant="8" id="ug5-v7-MV4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zgl-dJ-skO"/>
@@ -529,7 +530,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gf-sg-erN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3384" y="396"/>
+            <point key="canvasLocation" x="-3384.057971014493" y="395.75892857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PUi-uX-a3K">

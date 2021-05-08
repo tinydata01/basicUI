@@ -10,6 +10,14 @@ import UIKit
 
 class VesselSearchViewController: UIViewController,UITextFieldDelegate  {
 
+    @IBAction func backNavigation(_ sender: Any) {
+        unwindViewController()
+    }
+    
+    func unwindViewController() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBOutlet weak var searchField: UITextField!
     @IBAction func trackButton(_ sender: Any) {
         print("ok")
