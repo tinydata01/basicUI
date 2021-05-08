@@ -34,7 +34,7 @@
                                     <segue destination="RUD-fd-6dx" kind="show" id="3HS-X6-Gzc"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" background="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="UT4-Qe-Ixr">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UT4-Qe-Ixr">
                                 <rect key="frame" x="57" y="338" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="KX3-IV-eG2"/>
@@ -241,7 +241,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="loginBackground" width="320" height="480"/>
         <image name="logo" width="128" height="46.5"/>
     </resources>
 </document>

@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         let passwordImage = UIImage(named:"password")
         addLeftImageTo(txtField: _password, andImage: passwordImage!)
         _loginButton.layer.cornerRadius = 10
-        
+        //_email.borderStyle = .none
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "loginBackground.png")!)    // 1- this will add it with the default
     self.addBackground()
         
@@ -33,8 +33,7 @@ func addLeftImageTo(txtField:UITextField, andImage img: UIImage){
         let leftImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: img.size.width, height: img.size.height))
         leftImageView.image = img
         txtField.leftView = leftImageView
-        txtField.leftViewMode = .always
-    }
+}
     
     func addBackground() {
     // screen width and height:
@@ -50,6 +49,6 @@ func addLeftImageTo(txtField:UITextField, andImage img: UIImage){
         self.view.addSubview(imageViewBackground)
         self.view.sendSubviewToBack(imageViewBackground)
 }
-    
+     
 }
 
