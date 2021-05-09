@@ -9,6 +9,18 @@
 import UIKit
 
 class VesselScheduleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var destination: UILabel!
+    @IBOutlet weak var destinationCode: UILabel!
+    @IBOutlet weak var sourceCode: UILabel!
+    @IBOutlet weak var source: UILabel!
+    
+    var dateText: String = ""
+    var destinationText: String = ""
+    var destinationCodeText: String = ""
+    var sourceCodeText: String = ""
+    var sourceText: String = ""
+    
     let titleLabel = ["Lisbon, 1896 - 9 days", "Lisbon, 1896 - 9 days"]
     let destinationDate = ["24 Apr 2018", "24 Apr 2018"]
     let destinationData = ["INCAEC, Vishakapatnam", "INCAEC, Vishakapatnam"]
@@ -40,6 +52,13 @@ class VesselScheduleViewController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        date.text = dateText
+        sourceCode.text = sourceCodeText 
+        destination.text = destinationText 
+        destinationCode.text = destinationCodeText 
+        source.text = sourceText
+        
         viewWillDisappear(true)
         tableView.dataSource = self
         tableView.delegate = self

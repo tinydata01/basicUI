@@ -41,6 +41,27 @@ class DashboardViewController: UIViewController {
         self.dropDown.show()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+        // Create a variable to store the name the user entered on textField
+        let sourcecode = "AECEC"
+        let destinationcode = "INCDNC"
+        let sourceD = "Jabel Ali"
+        let destinationD = "Vishakapatnam"
+        let dateD = "15 Apr 2018"
+            
+        // Create a new variable to store the instance of the SecondViewController
+        // set the variable from the SecondViewController that will receive the data
+        let destinationVC = segue.destination as! VesselScheduleViewController
+        
+        destinationVC.destinationCodeText = destinationcode
+        destinationVC.destinationText = destinationD
+        destinationVC.sourceText = sourceD
+        destinationVC.sourceCodeText = sourcecode
+        destinationVC.dateText = dateD
+        
+    }
+    
     @IBOutlet weak var dropDownTextFeild2: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
