@@ -20,6 +20,7 @@ class DashboardViewController: UIViewController {
     //@IBOutlet var fromLocation: DropDown!
     
    
+    @IBOutlet weak var vesselScheduleLabel: UILabel!
     //@IBOutlet var datePicker: UITextField!
     //@IBOutlet var toLocation: DropDown!
     @IBOutlet weak var dropDownTextField1: UITextField!
