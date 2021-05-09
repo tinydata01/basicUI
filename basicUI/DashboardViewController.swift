@@ -25,6 +25,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var dropDownTextField1: UITextField!
     let dropDown = DropDown()
 
+    @IBOutlet weak var dropDownTextFeild2: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
