@@ -46,7 +46,7 @@ class VesselScheduleViewController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+print(date , destination , destinationCode, sourceCode, source)
         sourceData = sourceCode + ", " + source
         destinationData = destinationCode + ", " + destination
         sourceCodeLabel.text = sourceCode

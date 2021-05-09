@@ -17,6 +17,9 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var vesselScheduleLabel: UILabel!
     @IBOutlet weak var dropDownTextField1: UITextField!
     
+    @IBAction func findButton(_ sender: Any) {
+        print("ok")
+    }
     @IBOutlet var dropDownTextField2: UITextField!
     
     let dropDown = DropDown()
@@ -37,10 +40,10 @@ class DashboardViewController: UIViewController {
     if segue.destination is VesselScheduleViewController {
         let vc = segue.destination as? VesselScheduleViewController
         vc?.date = dateTxt.text!
-        vc?.destination = dropDownTextFeild2.text!
+        vc?.destination = fromLocationLabel.text!
         vc?.destinationCode = "AEJC"
         vc?.sourceCode = "SVTC"
-        vc?.source = dropDownTextField1.text!
+        vc?.source = toLocationLabel.text!
     }
 }
     override func viewDidLoad() {
@@ -153,3 +156,4 @@ class DashboardViewController: UIViewController {
         self.view.endEditing(true)
     }
 }
+
