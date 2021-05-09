@@ -28,7 +28,7 @@ class StepperViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     @IBOutlet weak var tableView: UITableView!
-    var imgArr = ["bw","bw","bw", "bw","bw"]
+    var imgArr = ["Containers-in-transit-to-POL-","bw-Shipment-to-be-loaded-by-Shipper","bw-Shipment-on-Board", "bw-Shipment-Discharged","bw-Shipment-in-transit-to-POL"]
     var txt = ["Booking Confirmed","Container Picked up","Arrived at POR","Arrived at POR","Shipment Received at POL"]
     var txt2 = ["Oman","Tras","Sewewd","Pijko","Hans"]
     var txt3 = ["8 Mar 2018","9 Mar 2018","10 Mar 2018","7 Mar 2018","30 Mar 2018"]
