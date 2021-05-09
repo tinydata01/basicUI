@@ -9,7 +9,23 @@
 import UIKit
 
 class StepperViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
+    @IBAction func backNavigation(_ sender: Any) {
+        unwindViewController()
+    }
+    func unwindViewController() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     
     @IBOutlet weak var tableView: UITableView!
     var imgArr = ["bw","bw","bw", "bw","bw"]
@@ -18,6 +34,7 @@ class StepperViewController: UIViewController, UITableViewDelegate, UITableViewD
     var txt3 = ["8 Mar 2018","9 Mar 2018","10 Mar 2018","7 Mar 2018","30 Mar 2018"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewWillDisappear(true)
         tableView.delegate = self
         tableView.dataSource = self
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
