@@ -25,15 +25,26 @@ class VesselSearchViewController: UIViewController,UITextFieldDelegate  {
     }
     
     let dropDown = DropDown()
-    var jon =
-[["firstName" : "John Sam","lastName" : "Smith"],
-["firstName" : "Johnny","lastName" : "Smith"],
-["firstName" : "Albert","lastName" : "Smith"],
-["firstName" : "Alby","lastName" : "Wright"],
-["firstName" : "Smith","lastName" : "Green"]]
+    var jon : [VesselsData] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        DataService.shared.fetchVesselData{(result) in
+                    switch result {
+                    case .success(let gists):
+                        for gist in gists {
+                            let vesselData =  gist.availableVessels
+                            self.jon = vesselData
+                            /*for item in vesselData {
+                                self.titleLabel.append(item.vesselName+", "+item.vesselNo+" - "+item.expectedTimeValue+" "+item.expectedTimeUnit)
+                                self.destinationDate.append(item.arrivalDate)
+                                self.sourceDate.append(item.startDate)
+                            }*/
+                        }
+                    case .failure(let _error):
+                        print(_error)
+                    }
+        }
         // Do any additional setup after loading the view.
         searchField.delegate = self
         searchField.underlined(color: .darkGray)
@@ -68,10 +79,10 @@ class VesselSearchViewController: UIViewController,UITextFieldDelegate  {
                 let srch = txt[..<range]
                 print(srch)
                 let filtered = jon.filter {
-    return $0["firstName"]?.range(of: srch, options: .caseInsensitive) != nil
+                    return $0.vesselName.range(of: srch, options: .caseInsensitive) != nil
 }
                 print(filtered)
-                dropDown.dataSource = filtered.compactMap { $0["firstName"] }
+                dropDown.dataSource = filtered.compactMap { $0.vesselName}
                 dropDown.show()
             }
             /*let vc = self.storyboard?.instantiateViewController(identifier: "tempViewController") as! tempViewController
