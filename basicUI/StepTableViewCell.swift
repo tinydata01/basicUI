@@ -14,9 +14,12 @@ class StepTableViewCell: UITableViewCell {
     @IBOutlet weak var line1: UILabel!
     @IBOutlet weak var line2: UILabel!
     @IBOutlet weak var line3: UILabel!
+    
+    @IBOutlet var roundImg: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
