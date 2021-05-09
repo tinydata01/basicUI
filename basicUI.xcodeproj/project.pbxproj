@@ -12,16 +12,16 @@
 		371B360D261A464700365F20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371B360C261A464700365F20 /* ViewController.swift */; };
 		371B3612261A464800365F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371B3611261A464800365F20 /* Assets.xcassets */; };
 		371B3615261A464800365F20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371B3613261A464800365F20 /* LaunchScreen.storyboard */; };
+		3751C4B426480CEB00B41094 /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3751C4B326480CEB00B41094 /* iOSDropDown.framework */; };
 		3782E4602645765D006DF07B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3782E45F2645765D006DF07B /* Images.xcassets */; };
 		37E227AB2646FE0D0083562B /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37E227A72646FE0D0083562B /* Lato-Light.ttf */; };
 		37E227AC2646FE0D0083562B /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37E227A82646FE0D0083562B /* Lato-Black.ttf */; };
 		37E227AD2646FE0D0083562B /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37E227A92646FE0D0083562B /* Lato-Bold.ttf */; };
 		37E227AE2646FE0D0083562B /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37E227AA2646FE0D0083562B /* Lato-Regular.ttf */; };
-		37E227B826471B0C0083562B /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E227B726471B0C0083562B /* iOSDropDown.framework */; };
+		3E25892E593ECED09EFE91D3 /* Pods_basicUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC10CDF6D618E4A00A554B4 /* Pods_basicUI.framework */; };
 		8BB38095264659030055BA43 /* VesselSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB38094264659030055BA43 /* VesselSearchViewController.swift */; };
 		8BB596BB2647B0D50047223F /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB596BA2647B0D50047223F /* StepperViewController.swift */; };
 		8BB596BD2647B1060047223F /* StepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB596BC2647B1060047223F /* StepTableViewCell.swift */; };
-		9411E2A427FB288174C48383 /* Pods_basicUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC10CDF6D618E4A00A554B4 /* Pods_basicUI.framework */; };
 		AD410A0D2645923B00AA0C54 /* VesselScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410A0C2645923B00AA0C54 /* VesselScheduleViewController.swift */; };
 		AD410A102645924B00AA0C54 /* TrackShipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410A0F2645924B00AA0C54 /* TrackShipmentViewController.swift */; };
 		AD410A132645925900AA0C54 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410A122645925900AA0C54 /* DashboardViewController.swift */; };
@@ -41,6 +41,7 @@
 		371B3611261A464800365F20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		371B3614261A464800365F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		371B3616261A464800365F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3751C4B326480CEB00B41094 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3782E45F2645765D006DF07B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		37E227A72646FE0D0083562B /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
 		37E227A82646FE0D0083562B /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
@@ -70,8 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37E227B826471B0C0083562B /* iOSDropDown.framework in Frameworks */,
-				9411E2A427FB288174C48383 /* Pods_basicUI.framework in Frameworks */,
+				3751C4B426480CEB00B41094 /* iOSDropDown.framework in Frameworks */,
+				3E25892E593ECED09EFE91D3 /* Pods_basicUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +137,7 @@
 		6FB2159E917E313C1D91DEA1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3751C4B326480CEB00B41094 /* iOSDropDown.framework */,
 				37E227B726471B0C0083562B /* iOSDropDown.framework */,
 				37E227B3264715740083562B /* iOSDropDown.framework */,
 				37E227B1264711B40083562B /* iOSDropDown.framework */,

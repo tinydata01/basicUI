@@ -9,6 +9,7 @@
 import UIKit
 
 import DropDown
+//import iOSDropDown
 class DashboardViewController: UIViewController {
     //@IBOutlet var dateTxt: UITextField!
     let datePicker = UIDatePicker()
@@ -24,6 +25,7 @@ class DashboardViewController: UIViewController {
     //@IBOutlet var datePicker: UITextField!
     //@IBOutlet var toLocation: DropDown!
     @IBOutlet weak var dropDownTextField1: UITextField!
+    
     let dropDown = DropDown()
     let toDropDown = DropDown()
 
@@ -31,6 +33,13 @@ class DashboardViewController: UIViewController {
         dropDown.show()
     }
     
+    @IBAction func toLocation(_ sender: Any) {
+        self.toDropDown.show()
+    }
+    
+    @IBAction func fromLocation(_ sender: Any) {
+        self.dropDown.show()
+    }
     
     @IBOutlet weak var dropDownTextFeild2: UITextField!
     override func viewDidLoad() {
@@ -94,9 +103,9 @@ class DashboardViewController: UIViewController {
 
                         self.toDropDown.dataSource = dropDownList2
 
-                        self.dropDown.show()
+                        //self.dropDown.show()
 
-                        self.toDropDown.show()
+                        //self.toDropDown.show()
 
                         
 
