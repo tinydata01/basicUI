@@ -19,6 +19,8 @@
 		37E227AE2646FE0D0083562B /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37E227AA2646FE0D0083562B /* Lato-Regular.ttf */; };
 		37E227B826471B0C0083562B /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E227B726471B0C0083562B /* iOSDropDown.framework */; };
 		8BB38095264659030055BA43 /* VesselSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB38094264659030055BA43 /* VesselSearchViewController.swift */; };
+		8BB596BB2647B0D50047223F /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB596BA2647B0D50047223F /* StepperViewController.swift */; };
+		8BB596BD2647B1060047223F /* StepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB596BC2647B1060047223F /* StepTableViewCell.swift */; };
 		9411E2A427FB288174C48383 /* Pods_basicUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC10CDF6D618E4A00A554B4 /* Pods_basicUI.framework */; };
 		AD410A0D2645923B00AA0C54 /* VesselScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410A0C2645923B00AA0C54 /* VesselScheduleViewController.swift */; };
 		AD410A102645924B00AA0C54 /* TrackShipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410A0F2645924B00AA0C54 /* TrackShipmentViewController.swift */; };
@@ -46,6 +48,8 @@
 		37E227B3264715740083562B /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E227B726471B0C0083562B /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB38094264659030055BA43 /* VesselSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselSearchViewController.swift; sourceTree = "<group>"; };
+		8BB596BA2647B0D50047223F /* StepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
+		8BB596BC2647B1060047223F /* StepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTableViewCell.swift; sourceTree = "<group>"; };
 		AD410A0C2645923B00AA0C54 /* VesselScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselScheduleViewController.swift; sourceTree = "<group>"; };
 		AD410A0F2645924B00AA0C54 /* TrackShipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackShipmentViewController.swift; sourceTree = "<group>"; };
 		AD410A122645925900AA0C54 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				8BB38094264659030055BA43 /* VesselSearchViewController.swift */,
 				ADA8016A264704B900F3BC71 /* CardCell.swift */,
 				37E227A62646FDFB0083562B /* New Group */,
+				8BB596BA2647B0D50047223F /* StepperViewController.swift */,
+				8BB596BC2647B1060047223F /* StepTableViewCell.swift */,
 			);
 			path = basicUI;
 			sourceTree = "<group>";
@@ -262,9 +268,11 @@
 				371B360D261A464700365F20 /* ViewController.swift in Sources */,
 				AD410A132645925900AA0C54 /* DashboardViewController.swift in Sources */,
 				371B3609261A464700365F20 /* AppDelegate.swift in Sources */,
+				8BB596BD2647B1060047223F /* StepTableViewCell.swift in Sources */,
 				ADA8016B264704B900F3BC71 /* CardCell.swift in Sources */,
 				AD410A102645924B00AA0C54 /* TrackShipmentViewController.swift in Sources */,
 				8BB38095264659030055BA43 /* VesselSearchViewController.swift in Sources */,
+				8BB596BB2647B0D50047223F /* StepperViewController.swift in Sources */,
 				371B360B261A464700365F20 /* SceneDelegate.swift in Sources */,
 				AD410A0D2645923B00AA0C54 /* VesselScheduleViewController.swift in Sources */,
 			);
