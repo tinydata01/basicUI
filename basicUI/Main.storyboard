@@ -196,6 +196,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ant-Nd-Etx">
+                                <rect key="frame" x="80" y="411" width="290" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="T1W-pI-JHr"/>
+                                    <constraint firstAttribute="width" constant="290" id="f5F-h9-e3s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2d1-bf-1BP">
+                                <rect key="frame" x="102" y="315" width="270" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="RUD-fd-6dx" id="cXr-xf-7SZ"/>
+                                    <outlet property="delegate" destination="RUD-fd-6dx" id="J2k-5H-AH2"/>
+                                </connections>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ulh-Iz-ZnU">
+                                <rect key="frame" x="107" y="315" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="31C-s8-puf"/>
+                                    <constraint firstAttribute="width" constant="250" id="ABI-g7-9Be"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="RUD-fd-6dx" id="dqF-J1-yHO"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -205,6 +234,7 @@
                             <constraint firstAttribute="trailing" secondItem="rTr-3i-Tyt" secondAttribute="trailing" constant="30" id="Ccz-FE-P9M"/>
                             <constraint firstItem="9Le-3l-gVS" firstAttribute="leading" secondItem="q5t-Ly-O6b" secondAttribute="trailing" constant="30" id="DK7-AQ-9Ot"/>
                             <constraint firstItem="1hh-J7-pSS" firstAttribute="centerX" secondItem="Fai-Uo-cTD" secondAttribute="centerX" id="Dma-CK-JhH"/>
+                            <constraint firstItem="Ulh-Iz-ZnU" firstAttribute="top" secondItem="1hh-J7-pSS" secondAttribute="bottom" constant="42" id="FeO-7t-hWK"/>
                             <constraint firstItem="rTr-3i-Tyt" firstAttribute="leading" secondItem="9Le-3l-gVS" secondAttribute="trailing" constant="30" id="Rjh-eA-OmD"/>
                             <constraint firstItem="NSd-kx-KZF" firstAttribute="centerX" secondItem="hRt-4d-6Dw" secondAttribute="centerX" id="Utq-oz-wN8"/>
                             <constraint firstItem="9Le-3l-gVS" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="Whz-0K-R7F"/>
@@ -213,8 +243,10 @@
                             <constraint firstItem="Fai-Uo-cTD" firstAttribute="top" secondItem="q5t-Ly-O6b" secondAttribute="bottom" constant="80" id="ZWR-oo-HHg"/>
                             <constraint firstItem="1hh-J7-pSS" firstAttribute="top" secondItem="Fai-Uo-cTD" secondAttribute="bottom" constant="3" id="bGf-p2-QcE"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="NSd-kx-KZF" secondAttribute="trailing" constant="26" id="caE-cX-Ghm"/>
+                            <constraint firstItem="Ulh-Iz-ZnU" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="8" id="ctB-Ho-mfl"/>
                             <constraint firstItem="hRt-4d-6Dw" firstAttribute="leading" secondItem="Fai-Uo-cTD" secondAttribute="trailing" constant="70" id="ma0-BW-gKo"/>
                             <constraint firstItem="NSd-kx-KZF" firstAttribute="top" secondItem="hRt-4d-6Dw" secondAttribute="bottom" constant="3" id="nMW-XF-VRW"/>
+                            <constraint firstItem="Ant-Nd-Etx" firstAttribute="leading" secondItem="hHt-Dx-pjD" secondAttribute="leading" constant="80" id="nbo-52-CZT"/>
                             <constraint firstItem="0IT-qL-eF9" firstAttribute="centerX" secondItem="x1E-uZ-dFv" secondAttribute="centerX" id="oIP-HR-aTa"/>
                             <constraint firstItem="hRt-4d-6Dw" firstAttribute="top" secondItem="rTr-3i-Tyt" secondAttribute="bottom" constant="80" id="s2Y-ed-ZhC"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="hRt-4d-6Dw" secondAttribute="trailing" constant="50" id="w53-eH-DxN"/>
@@ -224,6 +256,9 @@
                     <navigationItem key="navigationItem" id="yi7-Mn-oWh"/>
                     <connections>
                         <outlet property="dateTxt" destination="0IT-qL-eF9" id="UWN-iU-rPn"/>
+                        <outlet property="dropDown" destination="2d1-bf-1BP" id="ylK-Ty-umF"/>
+                        <outlet property="textBox" destination="Ulh-Iz-ZnU" id="zvC-mk-tEH"/>
+                        <outlet property="toLocation" destination="Ant-Nd-Etx" id="LiP-fk-v4s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrv-4E-NXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "user.png",
+      "filename" : "icons8-calendar-48.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "user-1.png",
+      "filename" : "icons8-calendar-96.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "user-2.png",
+      "filename" : "icons8-calendar-97.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
