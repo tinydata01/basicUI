@@ -9,11 +9,17 @@
 import UIKit
 
 class VesselScheduleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet var sourceCodeLabel: UILabel!
+    @IBOutlet var sourceLabel: UILabel!
+    @IBOutlet var destinationCodeLabel: UILabel!
+    @IBOutlet var destinationLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
+    var date = "", destination = "", destinationCode = "", sourceCode = "", source = ""
     let titleLabel = ["Lisbon, 1896 - 9 days", "Lisbon, 1896 - 9 days"]
     let destinationDate = ["24 Apr 2018", "24 Apr 2018"]
-    let destinationData = ["INCAEC, Vishakapatnam", "INCAEC, Vishakapatnam"]
+    var destinationData = ""
     let sourceDate = ["15 Apr 2018", "15 Apr 2018"]
-    let sourceData = ["AEJEC, Jabel Ali", "AEJEC, Jabel Ali"]
+    var sourceData = ""
     let picture = [UIImage(named: "coastal.png"), UIImage(named: "coastal.png")]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,7 +29,7 @@ class VesselScheduleViewController: UIViewController, UITableViewDataSource, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cardCell", for: indexPath) as! CardCell
         
-        cell.configure(picture: picture[indexPath.row]!, title: titleLabel[indexPath.row], destination: destinationData[indexPath.row], source: sourceData[indexPath.row], sourceDate: sourceDate[indexPath.row], destinationDate: destinationDate[indexPath.row])
+        cell.configure(picture: picture[indexPath.row]!, title: titleLabel[indexPath.row], destination: destinationData, source: sourceData, sourceDate: sourceDate[indexPath.row], destinationDate: destinationDate[indexPath.row])
         
         return cell
     }
@@ -40,6 +46,15 @@ class VesselScheduleViewController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        sourceData = sourceCode + ", " + source
+        destinationData = destinationCode + ", " + destination
+        sourceCodeLabel.text = sourceCode
+        sourceLabel.text = source
+        destinationCodeLabel.text = destinationCode
+        destinationLabel.text = destination
+        dateLabel.text = date
+        
         viewWillDisappear(true)
         tableView.dataSource = self
         tableView.delegate = self

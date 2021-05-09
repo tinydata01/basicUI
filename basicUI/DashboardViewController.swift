@@ -32,6 +32,17 @@ class DashboardViewController: UIViewController {
         self.toDropDown.show()
     }
     @IBOutlet weak var dropDownTextFeild2: UITextField!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+{
+    if segue.destination is VesselScheduleViewController {
+        let vc = segue.destination as? VesselScheduleViewController
+        vc?.date = dateTxt.text!
+        vc?.destination = dropDownTextFeild2.text!
+        vc?.destinationCode = "AEJC"
+        vc?.sourceCode = "SVTC"
+        vc?.source = dropDownTextField1.text!
+    }
+}
     override func viewDidLoad() {
         super.viewDidLoad()
         fromLocationLabel.text = "Select From Location"
