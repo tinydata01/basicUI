@@ -8,7 +8,7 @@
 
 import UIKit
 
-import iOSDropDown
+import DropDown
 class DashboardViewController: UIViewController {
     //@IBOutlet var dateTxt: UITextField!
     let datePicker = UIDatePicker()
@@ -22,8 +22,32 @@ class DashboardViewController: UIViewController {
    
     //@IBOutlet var datePicker: UITextField!
     //@IBOutlet var toLocation: DropDown!
+    @IBOutlet weak var dropDownTextField1: UITextField!
+    let dropDown = DropDown()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dropDown.anchorView = dropDownTextField1
+        
+        dropDown.dataSource = ["Car", "Motorcycle", "Truck"]
+        
+        dropDown.show()
+        
+        DataService.shared.fetchData{(result) in
+            switch result {
+            case .success(let gists):
+                for gist in gists {
+                    //print("\(gist.destination)")
+                    let list =  gist.source
+                    print("list \(list)")
+                }
+            case .failure(let _error):
+                print(_error)
+            }
+            
+        }
+        
         // Do any additional setup after loading the view.
         viewWillDisappear(true)
         //fromLocation.underlined(color: .darkGray)

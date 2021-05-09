@@ -1,0 +1,52 @@
+[{
+	"source": [{
+			"port": "Deendayal Port",
+			"portCode": "KASEZ"
+		},
+		{
+			"port": "Paradip Port",
+			"portCode": "PPT"
+		},
+		{
+			"port": "Jawaharlal Nehru Port",
+			"portCode": "JNPT"
+		},
+		{
+			"port": "Visakhapatnam Port",
+			"portCode": "VPT"
+		},
+		{
+			"port": "Mumbai Port",
+			"portCode": "BPT"
+		},
+		{
+			"port": "Syama Prasad Mookerjee Port",
+			"portCode": "KoPT"
+		}
+	],
+	"destination": [{
+			"port": "Chennai Port",
+			"portCode": "MPT"
+		},
+		{
+			"port": "New Mangalore Port",
+			"portCode": "NMPT"
+		},
+		{
+			"port": "V. O. Chidambaranar Port",
+			"portCode": "INTUT"
+		},
+		{
+			"port": "Kochi Port",
+			"portCode": "CoPT"
+		},
+		{
+			"port": "Kamarajar Port Limited",
+			"portCode": "INENR"
+		},
+		{
+			"port": "Mormugao Port Trust",
+			"portCode": "MPT"
+		}
+	]
+}]

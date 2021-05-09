@@ -190,6 +190,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hbt-Ol-jcr">
+                                <rect key="frame" x="129" y="318" width="235" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Shipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSd-kx-KZF">
                                 <rect key="frame" x="278" y="248" width="147" height="20"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
@@ -202,11 +207,13 @@
                             <constraint firstItem="0IT-qL-eF9" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="412" id="0rX-fK-Rxa"/>
                             <constraint firstItem="q5t-Ly-O6b" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="2pD-ci-BM5"/>
                             <constraint firstItem="rTr-3i-Tyt" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="48a-JX-7S4"/>
+                            <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="Hbt-Ol-jcr" secondAttribute="trailing" constant="50" id="9iO-V5-mhc"/>
                             <constraint firstAttribute="trailing" secondItem="rTr-3i-Tyt" secondAttribute="trailing" constant="30" id="Ccz-FE-P9M"/>
                             <constraint firstItem="9Le-3l-gVS" firstAttribute="leading" secondItem="q5t-Ly-O6b" secondAttribute="trailing" constant="30" id="DK7-AQ-9Ot"/>
                             <constraint firstItem="1hh-J7-pSS" firstAttribute="centerX" secondItem="Fai-Uo-cTD" secondAttribute="centerX" id="Dma-CK-JhH"/>
                             <constraint firstItem="rTr-3i-Tyt" firstAttribute="leading" secondItem="9Le-3l-gVS" secondAttribute="trailing" constant="30" id="Rjh-eA-OmD"/>
                             <constraint firstItem="NSd-kx-KZF" firstAttribute="centerX" secondItem="hRt-4d-6Dw" secondAttribute="centerX" constant="17.5" id="Utq-oz-wN8"/>
+                            <constraint firstItem="Hbt-Ol-jcr" firstAttribute="top" secondItem="1hh-J7-pSS" secondAttribute="bottom" constant="50" id="VDI-TP-JxN"/>
                             <constraint firstItem="9Le-3l-gVS" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="Whz-0K-R7F"/>
                             <constraint firstItem="f00-Kb-gfg" firstAttribute="leading" secondItem="hHt-Dx-pjD" secondAttribute="leading" constant="39" id="XIB-B6-zRa"/>
                             <constraint firstItem="f00-Kb-gfg" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="227" id="Xlq-KF-zic"/>
@@ -217,6 +224,7 @@
                             <constraint firstItem="NSd-kx-KZF" firstAttribute="top" secondItem="hRt-4d-6Dw" secondAttribute="bottom" constant="3" id="nMW-XF-VRW"/>
                             <constraint firstItem="0IT-qL-eF9" firstAttribute="centerX" secondItem="x1E-uZ-dFv" secondAttribute="centerX" id="oIP-HR-aTa"/>
                             <constraint firstItem="hRt-4d-6Dw" firstAttribute="top" secondItem="rTr-3i-Tyt" secondAttribute="bottom" constant="80" id="s2Y-ed-ZhC"/>
+                            <constraint firstItem="Hbt-Ol-jcr" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="30" id="stR-o0-5Zb"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="hRt-4d-6Dw" secondAttribute="trailing" constant="50" id="w53-eH-DxN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hHt-Dx-pjD"/>
@@ -224,6 +232,7 @@
                     <navigationItem key="navigationItem" id="yi7-Mn-oWh"/>
                     <connections>
                         <outlet property="dateTxt" destination="0IT-qL-eF9" id="UWN-iU-rPn"/>
+                        <outlet property="dropDownTextField1" destination="Hbt-Ol-jcr" id="39d-UK-cXh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrv-4E-NXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -520,34 +529,6 @@
                 </label>
             </objects>
             <point key="canvasLocation" x="-4413.04347826087" y="396.42857142857139"/>
-        </scene>
-        <!--Track Shipment View Controller-->
-        <scene sceneID="0O3-20-9K0">
-            <objects>
-                <viewController id="O8u-hf-cDw" customClass="TrackShipmentViewController" customModule="basicUI" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rMy-xA-oI8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Shipment page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJB-Cg-cTc">
-                                <rect key="frame" x="80" y="431.5" width="254" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NJB-Cg-cTc" firstAttribute="centerX" secondItem="rMy-xA-oI8" secondAttribute="centerX" id="9Mg-Jg-nYB"/>
-                            <constraint firstItem="NJB-Cg-cTc" firstAttribute="centerY" secondItem="rMy-xA-oI8" secondAttribute="centerY" id="ewO-nj-Svf"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZkW-fG-kV8"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Zp4-KK-BVO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dJX-e7-FgW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2590" y="-464"/>
         </scene>
         <!--Vessel Search View Controller-->
         <scene sceneID="Uah-ml-4Vq">

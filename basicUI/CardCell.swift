@@ -27,13 +27,13 @@ class CardCell: UITableViewCell {
         sourceDateValue.text = sourceDate
         sourceLabel.text = source
         
-        requestButton.layer.shadowRadius = 10.0
+        requestButton.layer.cornerRadius = 10.0
         
         cardView.layer.shadowColor = UIColor.gray.cgColor
         cardView.layer.shadowOffset = CGSize(width: 1.0, height: 2.0)
         cardView.layer.shadowOpacity = 1.0
         cardView.layer.masksToBounds = false
-        cardView.layer.shadowRadius = 10.0
+        cardView.layer.cornerRadius = 10.0
     }
 
 }
