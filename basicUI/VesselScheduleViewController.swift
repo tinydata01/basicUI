@@ -14,13 +14,14 @@ class VesselScheduleViewController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet var destinationCodeLabel: UILabel!
     @IBOutlet var destinationLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
+    
+    var titleLabel = Array<String>()
+    var destinationDate = Array<String>()
+    var sourceDate = Array<String>()
     var date = "", destination = "", destinationCode = "", sourceCode = "", source = ""
-    let titleLabel = ["Lisbon, 1896 - 9 days", "Lisbon, 1896 - 9 days"]
-    let destinationDate = ["24 Apr 2018", "24 Apr 2018"]
     var destinationData = ""
-    let sourceDate = ["15 Apr 2018", "15 Apr 2018"]
     var sourceData = ""
-    let picture = [UIImage(named: "coastal.png"), UIImage(named: "coastal.png")]
+    let picture = UIImage(named: "coastal.png")
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titleLabel.count
@@ -29,7 +30,7 @@ class VesselScheduleViewController: UIViewController, UITableViewDataSource, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cardCell", for: indexPath) as! CardCell
         
-        cell.configure(picture: picture[indexPath.row]!, title: titleLabel[indexPath.row], destination: destinationData, source: sourceData, sourceDate: sourceDate[indexPath.row], destinationDate: destinationDate[indexPath.row])
+        cell.configure(picture: picture!, title: titleLabel[indexPath.row], destination: destinationData, source: sourceData, sourceDate: sourceDate[indexPath.row], destinationDate: destinationDate[indexPath.row])
         
         return cell
     }
@@ -46,7 +47,23 @@ class VesselScheduleViewController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-print(date , destination , destinationCode, sourceCode, source)
+        DataService.shared.fetchVesselData{(result) in
+                            switch result {
+                            case .success(let gists):
+                                for gist in gists {
+                                    let vesselData =  gist.availableVessels
+                                    for item in vesselData {
+                                        self.titleLabel.append(item.vesselName+", "+item.vesselNo+" - "+item.expectedTimeValue+" "+item.expectedTimeUnit)
+                                        self.destinationDate.append(item.arrivalDate)
+                                        self.sourceDate.append(item.startDate)
+                                    }
+                                }
+                            case .failure(let _error):
+                                print(_error)
+                            }
+                }
+        print(sourceDate)
+        print(date , destination , destinationCode, sourceCode, source)
         sourceData = sourceCode + ", " + source
         destinationData = destinationCode + ", " + destination
         sourceCodeLabel.text = sourceCode

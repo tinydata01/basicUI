@@ -6,7 +6,14 @@ struct Welcome: Codable {
 
 }
 
+struct VesselsAvailable: Codable {
+    let availableVessels: [VesselsData]
+}
 
+    
+struct VesselsData: Codable {
+    let vesselName, vesselNo, expectedTimeValue, expectedTimeUnit, startDate, arrivalDate: String
+}
 
 // MARK: - Destination
 

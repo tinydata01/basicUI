@@ -16,6 +16,21 @@ class DataService{
            completion(.failure(serializationError))
             }
         }
+    
+    func fetchVesselData(completion: @escaping (Result<[VesselsAvailable],Error>)-> Void){
+        guard let path = Bundle.main.path(forResource:"availableVessels", ofType:"json") else {return}
+        let url = URL(fileURLWithPath:path)
+        do{
+            let data = try Data(contentsOf:url)
+                //let json = try JSONSerialization.jsonObject(with: validData, options: [])
+            let gists = try JSONDecoder().decode([VesselsAvailable].self, from:data)
+                completion(.success(gists))
+            }
+            catch let serializationError{
+           completion(.failure(serializationError))
+            }
+        }
+        
 
     func fetchGists(completion: @escaping (Result<[Gist], Error>)-> Void){
         var componentURL = URLComponents()
