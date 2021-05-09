@@ -78,7 +78,7 @@ class StepperViewController: UIViewController, UITableViewDelegate, UITableViewD
     let path = CGMutablePath()
     path.addLines(between: [p0, p1])
     shapeLayer.path = path
-    shapeLayer.zPosition = -1
+    //shapeLayer.zPosition = -1
     view.layer.addSublayer(shapeLayer)
 }
     }
@@ -88,7 +88,7 @@ extension UIImageView {
     self.layer.cornerRadius = self.frame.height / 2
     self.layer.masksToBounds = false
     self.clipsToBounds = true
-
+        self.layer.zPosition = 10
    // make square(* must to make circle),
    // resize(reduce the kilobyte) and
    // fix rotation.

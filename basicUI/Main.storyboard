@@ -153,9 +153,6 @@
                                     <constraint firstAttribute="width" constant="50" id="X0f-O5-ICd"/>
                                 </constraints>
                                 <state key="normal" title=" " backgroundImage="findvesselschedules"/>
-                                <connections>
-                                    <segue destination="VVm-J7-hoH" kind="show" id="p74-ja-FpR"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vessel Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hh-J7-pSS">
                                 <rect key="frame" x="153.5" y="248" width="111.5" height="20"/>
@@ -174,6 +171,12 @@
                                     <segue destination="fUa-Y5-i6N" kind="show" id="xLM-C4-dcI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Shipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSd-kx-KZF">
+                                <rect key="frame" x="278" y="248" width="147" height="20"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashboard" translatesAutoresizingMaskIntoConstraints="NO" id="f00-Kb-gfg">
                                 <rect key="frame" x="39" y="315" width="60" height="130"/>
                                 <constraints>
@@ -182,10 +185,10 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0IT-qL-eF9">
-                                <rect key="frame" x="57" y="500" width="300" height="40"/>
+                                <rect key="frame" x="107" y="502" width="257" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="08Z-7Y-GzS"/>
-                                    <constraint firstAttribute="width" constant="300" id="nlC-6d-gNV"/>
+                                    <constraint firstAttribute="width" constant="257" id="nlC-6d-gNV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -195,22 +198,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Shipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSd-kx-KZF">
-                                <rect key="frame" x="278" y="248" width="147" height="20"/>
-                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bC6-4E-ErS">
+                                <rect key="frame" x="107" y="417" width="257" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="dropDownTextField2:" destination="VaB-Kq-koD" eventType="editingDidEnd" id="vqZ-WL-S08"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ln-bz-RjE">
+                                <rect key="frame" x="94" y="592" width="225" height="55"/>
+                                <color key="backgroundColor" name="deepBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="XFY-Ne-eYY"/>
+                                    <constraint firstAttribute="height" constant="55" id="hng-1f-Nxg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Find My Vessel">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VVm-J7-hoH" kind="show" id="5jP-MJ-awV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0IT-qL-eF9" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="412" id="0rX-fK-Rxa"/>
+                            <constraint firstItem="0IT-qL-eF9" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="414" id="0rX-fK-Rxa"/>
                             <constraint firstItem="q5t-Ly-O6b" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="2pD-ci-BM5"/>
                             <constraint firstItem="rTr-3i-Tyt" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="48a-JX-7S4"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="Hbt-Ol-jcr" secondAttribute="trailing" constant="50" id="9iO-V5-mhc"/>
                             <constraint firstAttribute="trailing" secondItem="rTr-3i-Tyt" secondAttribute="trailing" constant="30" id="Ccz-FE-P9M"/>
                             <constraint firstItem="9Le-3l-gVS" firstAttribute="leading" secondItem="q5t-Ly-O6b" secondAttribute="trailing" constant="30" id="DK7-AQ-9Ot"/>
                             <constraint firstItem="1hh-J7-pSS" firstAttribute="centerX" secondItem="Fai-Uo-cTD" secondAttribute="centerX" id="Dma-CK-JhH"/>
+                            <constraint firstItem="bC6-4E-ErS" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="8" id="GAF-9v-nUI"/>
+                            <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="5ln-bz-RjE" secondAttribute="trailing" constant="95" id="Qix-8x-Uws"/>
                             <constraint firstItem="rTr-3i-Tyt" firstAttribute="leading" secondItem="9Le-3l-gVS" secondAttribute="trailing" constant="30" id="Rjh-eA-OmD"/>
                             <constraint firstItem="NSd-kx-KZF" firstAttribute="centerX" secondItem="hRt-4d-6Dw" secondAttribute="centerX" constant="17.5" id="Utq-oz-wN8"/>
                             <constraint firstItem="Hbt-Ol-jcr" firstAttribute="top" secondItem="1hh-J7-pSS" secondAttribute="bottom" constant="50" id="VDI-TP-JxN"/>
@@ -219,12 +241,15 @@
                             <constraint firstItem="f00-Kb-gfg" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="227" id="Xlq-KF-zic"/>
                             <constraint firstItem="Fai-Uo-cTD" firstAttribute="top" secondItem="q5t-Ly-O6b" secondAttribute="bottom" constant="80" id="ZWR-oo-HHg"/>
                             <constraint firstItem="1hh-J7-pSS" firstAttribute="top" secondItem="Fai-Uo-cTD" secondAttribute="bottom" constant="3" id="bGf-p2-QcE"/>
+                            <constraint firstItem="5ln-bz-RjE" firstAttribute="top" secondItem="0IT-qL-eF9" secondAttribute="bottom" constant="50" id="bZY-iy-IQZ"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="NSd-kx-KZF" secondAttribute="trailing" constant="-11" id="caE-cX-Ghm"/>
+                            <constraint firstItem="bC6-4E-ErS" firstAttribute="top" secondItem="Hbt-Ol-jcr" secondAttribute="bottom" constant="65" id="fgU-uH-vfR"/>
                             <constraint firstItem="hRt-4d-6Dw" firstAttribute="leading" secondItem="Fai-Uo-cTD" secondAttribute="trailing" constant="70" id="ma0-BW-gKo"/>
                             <constraint firstItem="NSd-kx-KZF" firstAttribute="top" secondItem="hRt-4d-6Dw" secondAttribute="bottom" constant="3" id="nMW-XF-VRW"/>
-                            <constraint firstItem="0IT-qL-eF9" firstAttribute="centerX" secondItem="x1E-uZ-dFv" secondAttribute="centerX" id="oIP-HR-aTa"/>
+                            <constraint firstItem="0IT-qL-eF9" firstAttribute="centerX" secondItem="x1E-uZ-dFv" secondAttribute="centerX" constant="28.5" id="oIP-HR-aTa"/>
                             <constraint firstItem="hRt-4d-6Dw" firstAttribute="top" secondItem="rTr-3i-Tyt" secondAttribute="bottom" constant="80" id="s2Y-ed-ZhC"/>
                             <constraint firstItem="Hbt-Ol-jcr" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="30" id="stR-o0-5Zb"/>
+                            <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="bC6-4E-ErS" secondAttribute="trailing" constant="50" id="tv1-a4-h4s"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="hRt-4d-6Dw" secondAttribute="trailing" constant="50" id="w53-eH-DxN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hHt-Dx-pjD"/>
@@ -236,8 +261,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrv-4E-NXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="VaB-Kq-koD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-3871.0144927536235" y="-346.20535714285711"/>
+            <point key="canvasLocation" x="-4197" y="-335"/>
         </scene>
         <!--Vessel Schedule View Controller-->
         <scene sceneID="nVP-Hb-At2">

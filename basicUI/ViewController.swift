@@ -23,6 +23,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         _password.setIcon(UIImage(named:"password")!)
        }
     }
+    @IBAction func dropDownTextField2(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         viewWillDisappear(true)
