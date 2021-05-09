@@ -25,30 +25,94 @@ class DashboardViewController: UIViewController {
     //@IBOutlet var toLocation: DropDown!
     @IBOutlet weak var dropDownTextField1: UITextField!
     let dropDown = DropDown()
+    let toDropDown = DropDown()
 
+    @IBAction func dropDownDisplay(_ sender: Any) {
+        dropDown.show()
+    }
+    
+    
     @IBOutlet weak var dropDownTextFeild2: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dropDown.anchorView = dropDownTextField1
-        
-        dropDown.dataSource = ["Car", "Motorcycle", "Truck"]
+
+                DropDown.startListeningToKeyboard()        //dropDown.dataSource = ["Car", "Motorcycle", "Truck"]
+
+                var dropDownList = [""]
+
+                
+
+                var dropDownList2 = [""]
         
         dropDown.show()
         
         DataService.shared.fetchData{(result) in
-            switch result {
-            case .success(let gists):
-                for gist in gists {
-                    //print("\(gist.destination)")
-                    let list =  gist.source
-                    print("list \(list)")
+
+                    switch result {
+
+                    case .success(let gists):
+
+                        for gist in gists {
+
+                            //print("\(gist.destination)")
+
+                            let list =  gist.source
+
+                            //print("list \(list)")
+
+                            let numberCount = list.count
+
+                            dropDownList = [String]()
+
+                            dropDownList.reserveCapacity(numberCount)
+
+                            for listItem in list {
+
+                                
+
+                                dropDownList.append(listItem.port)}
+
+                            
+
+                            dropDownList2 = [String]()
+
+                            dropDownList2.reserveCapacity(numberCount)
+
+                            for listItem in gist.destination {
+
+                                
+
+                                dropDownList2.append(listItem.port)}
+
+                    }
+
+                        
+
+                        self.dropDown.dataSource = dropDownList
+
+                        self.toDropDown.dataSource = dropDownList2
+
+                        self.dropDown.show()
+
+                        self.toDropDown.show()
+
+                        
+
+                       
+
+                        
+
+                    case .failure(let _error):
+
+                        print(_error)
+
+                    }
+
+                    
+
                 }
-            case .failure(let _error):
-                print(_error)
-            }
-            
-        }
         
         // Do any additional setup after loading the view.
         viewWillDisappear(true)
