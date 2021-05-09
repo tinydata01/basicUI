@@ -13,120 +13,79 @@ import DropDown
 class DashboardViewController: UIViewController {
     //@IBOutlet var dateTxt: UITextField!
     let datePicker = UIDatePicker()
-   
-    //@IBOutlet var fromLocation: DropDown!
-    
-    //@IBOutlet var toLocation: DropDown!
-     @IBOutlet var dateTxt: UITextField!
-    //@IBOutlet var fromLocation: DropDown!
-    
-   
+    @IBOutlet var dateTxt: UITextField!
     @IBOutlet weak var vesselScheduleLabel: UILabel!
-    //@IBOutlet var datePicker: UITextField!
-    //@IBOutlet var toLocation: DropDown!
     @IBOutlet weak var dropDownTextField1: UITextField!
+    
+    @IBOutlet var dropDownTextField2: UITextField!
     
     let dropDown = DropDown()
     let toDropDown = DropDown()
-
-    @IBAction func dropDownDisplay(_ sender: Any) {
-        dropDown.show()
+   
+    @IBOutlet var toLocationLabel: UILabel!
+    @IBOutlet var fromLocationLabel: UILabel!
+    @IBAction func fromLocation(_ sender: Any) {
+        self.dropDown.show()
     }
     
     @IBAction func toLocation(_ sender: Any) {
         self.toDropDown.show()
     }
-    
-    @IBAction func fromLocation(_ sender: Any) {
-        self.dropDown.show()
-    }
-    
     @IBOutlet weak var dropDownTextFeild2: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        fromLocationLabel.text = "Select From Location"
         dropDown.anchorView = dropDownTextField1
-
-                DropDown.startListeningToKeyboard()        //dropDown.dataSource = ["Car", "Motorcycle", "Truck"]
+        dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
+        dropDown.topOffset = CGPoint(x: 0, y:-(dropDown.anchorView?.plainView.bounds.height)!)
+        dropDown.direction = .any
+        self.toLocationLabel.text = "Select to Location"
+              toDropDown.anchorView = dropDownTextField2
+              toDropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
+              toDropDown.topOffset = CGPoint(x: 0, y:-(dropDown.anchorView?.plainView.bounds.height)!)
+        toDropDown.direction = .any
+        DropDown.startListeningToKeyboard()        //dropDown.dataSource = ["Car", "Motorcycle", "Truck"]
 
                 var dropDownList = [""]
-
-                
-
                 var dropDownList2 = [""]
         
-        dropDown.show()
+    
         
         DataService.shared.fetchData{(result) in
-
                     switch result {
-
-                    case .success(let gists):
-
-                        for gist in gists {
-
-                            //print("\(gist.destination)")
-
+                        case .success(let gists):
+                            for gist in gists {
                             let list =  gist.source
-
-                            //print("list \(list)")
-
                             let numberCount = list.count
-
                             dropDownList = [String]()
-
                             dropDownList.reserveCapacity(numberCount)
-
                             for listItem in list {
-
-                                
-
-                                dropDownList.append(listItem.port)}
-
-                            
-
+                            dropDownList.append(listItem.port)}
+                                //for 2nd drop down
                             dropDownList2 = [String]()
-
                             dropDownList2.reserveCapacity(numberCount)
-
                             for listItem in gist.destination {
-
-                                
-
                                 dropDownList2.append(listItem.port)}
-
                     }
-
-                        
-
                         self.dropDown.dataSource = dropDownList
 
                         self.toDropDown.dataSource = dropDownList2
-
-                        //self.dropDown.show()
-
-                        //self.toDropDown.show()
-
-                        
-
-                       
-
-                        
-
-                    case .failure(let _error):
-
-                        print(_error)
-
+                  case .failure(let _error):
+                       print(_error)
                     }
-
-                    
-
-                }
+                    self.dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+                      self.fromLocationLabel.text = dropDownList[index]
+                      print("Selected item: \(item) at index: \(index)")
+                    }
+            self.toDropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+                self.toLocationLabel.text = dropDownList2[index]
+              print("Selected item: \(item) at index: \(index)")
+            }                }
         
         // Do any additional setup after loading the view.
         viewWillDisappear(true)
-        //fromLocation.underlined(color: .darkGray)
-        //toLocation.underlined(color: .darkGray)
+        dropDownTextField1.underlined(color: .darkGray)
+        dropDownTextField2.underlined(color: .darkGray)
         dateTxt.underlined(color: .darkGray)
         
         let backgroundImage = UIImage.init(named: "LaunchScreen-AspectFill.png")

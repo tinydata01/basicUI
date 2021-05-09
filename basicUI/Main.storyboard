@@ -207,9 +207,6 @@
                                 <rect key="frame" x="129" y="273" width="235" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="dropDownDisplay:" destination="RUD-fd-6dx" eventType="touchUpInside" id="ZTd-lP-4BW"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ln-bz-RjE">
                                 <rect key="frame" x="94" y="548" width="225" height="55"/>
@@ -234,30 +231,51 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-xc-Yzp">
-                                <rect key="frame" x="158" y="317" width="142" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-xc-Yzp">
+                                <rect key="frame" x="141" y="272" width="223" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select from Location"/>
                                 <connections>
                                     <action selector="fromLocation:" destination="RUD-fd-6dx" eventType="touchUpInside" id="R9d-Qi-aMs"/>
-                                    <action selector="toLocation:" destination="RUD-fd-6dx" eventType="touchUpInside" id="iZV-8O-dzA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm9-hg-VZh">
-                                <rect key="frame" x="144" y="411" width="127" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select To Location"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFI-bT-GKO">
+                                <rect key="frame" x="139" y="279" width="200" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="kIy-Cg-d1a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDx-Q0-1eB">
+                                <rect key="frame" x="119" y="367" width="245" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="m5g-mE-yqR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="fromLocation:" destination="RUD-fd-6dx" eventType="touchUpInside" id="2fK-bT-7gX"/>
-                                    <action selector="toLocation:" destination="RUD-fd-6dx" eventType="touchUpInside" id="V6T-U7-OOb"/>
+                                    <action selector="toLocation:" destination="RUD-fd-6dx" eventType="touchUpInside" id="NyH-lw-iSo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D13-gi-2Ys">
+                                <rect key="frame" x="107" y="374" width="246" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="atd-aM-Lzl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0IT-qL-eF9" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="414" id="0rX-fK-Rxa"/>
                             <constraint firstItem="q5t-Ly-O6b" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="2pD-ci-BM5"/>
                             <constraint firstItem="rTr-3i-Tyt" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="48a-JX-7S4"/>
+                            <constraint firstItem="cDx-Q0-1eB" firstAttribute="top" secondItem="Hbt-Ol-jcr" secondAttribute="bottom" constant="60" id="89e-Ge-abs"/>
+                            <constraint firstItem="YFI-bT-GKO" firstAttribute="top" secondItem="1hh-J7-pSS" secondAttribute="bottom" constant="56" id="8k2-tv-f1S"/>
+                            <constraint firstItem="D13-gi-2Ys" firstAttribute="top" secondItem="Hbt-Ol-jcr" secondAttribute="bottom" constant="67" id="9DY-Lx-1AX"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="Hbt-Ol-jcr" secondAttribute="trailing" constant="50" id="9iO-V5-mhc"/>
                             <constraint firstAttribute="trailing" secondItem="rTr-3i-Tyt" secondAttribute="trailing" constant="30" id="Ccz-FE-P9M"/>
                             <constraint firstItem="9Le-3l-gVS" firstAttribute="leading" secondItem="q5t-Ly-O6b" secondAttribute="trailing" constant="30" id="DK7-AQ-9Ot"/>
@@ -265,6 +283,7 @@
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="5ln-bz-RjE" secondAttribute="trailing" constant="95" id="Qix-8x-Uws"/>
                             <constraint firstItem="ve6-PL-QfO" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="8" symbolic="YES" id="QkS-oV-GMX"/>
                             <constraint firstItem="rTr-3i-Tyt" firstAttribute="leading" secondItem="9Le-3l-gVS" secondAttribute="trailing" constant="30" id="Rjh-eA-OmD"/>
+                            <constraint firstItem="D13-gi-2Ys" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="57" id="RrU-Jz-ocr"/>
                             <constraint firstItem="NSd-kx-KZF" firstAttribute="centerX" secondItem="hRt-4d-6Dw" secondAttribute="centerX" constant="17.5" id="Utq-oz-wN8"/>
                             <constraint firstItem="Hbt-Ol-jcr" firstAttribute="top" secondItem="1hh-J7-pSS" secondAttribute="bottom" constant="50" id="VDI-TP-JxN"/>
                             <constraint firstItem="9Le-3l-gVS" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="Whz-0K-R7F"/>
@@ -281,7 +300,9 @@
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="ve6-PL-QfO" secondAttribute="trailing" constant="50" id="qmh-3v-d2C"/>
                             <constraint firstItem="hRt-4d-6Dw" firstAttribute="top" secondItem="rTr-3i-Tyt" secondAttribute="bottom" constant="80" id="s2Y-ed-ZhC"/>
                             <constraint firstItem="Hbt-Ol-jcr" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="30" id="stR-o0-5Zb"/>
+                            <constraint firstItem="YFI-bT-GKO" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="40" id="w1x-eX-vtV"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="hRt-4d-6Dw" secondAttribute="trailing" constant="50" id="w53-eH-DxN"/>
+                            <constraint firstItem="cDx-Q0-1eB" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="20" id="yOh-gX-JZA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hHt-Dx-pjD"/>
                     </view>
@@ -290,6 +311,9 @@
                         <outlet property="dateTxt" destination="0IT-qL-eF9" id="UWN-iU-rPn"/>
                         <outlet property="dropDownTextFeild2" destination="ve6-PL-QfO" id="gwi-CW-gWX"/>
                         <outlet property="dropDownTextField1" destination="Hbt-Ol-jcr" id="39d-UK-cXh"/>
+                        <outlet property="dropDownTextField2" destination="ve6-PL-QfO" id="8io-DS-xgU"/>
+                        <outlet property="fromLocationLabel" destination="YFI-bT-GKO" id="H5S-Qe-FBr"/>
+                        <outlet property="toLocationLabel" destination="D13-gi-2Ys" id="3r1-j6-V7D"/>
                         <outlet property="vesselScheduleLabel" destination="1hh-J7-pSS" id="jAQ-Yn-45m"/>
                     </connections>
                 </viewController>
