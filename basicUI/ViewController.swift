@@ -16,6 +16,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
        }
     }
     
+    
     @IBOutlet var _loginButton: UIView!
     
     @IBOutlet var _password: UITextField!{
@@ -23,8 +24,28 @@ class ViewController: UIViewController,UITextFieldDelegate {
         _password.setIcon(UIImage(named:"password")!)
        }
     }
+    @IBOutlet var txtlabel: UILabel!
+    @IBAction func clickLogin(_ sender: Any) {
+        txtlabel.isHidden = true
+        guard let _ = _email.text, _email.text == "abc@gmail.com"
+        else {
+            txtlabel.isHidden = false
+            txtlabel.text = "User Email Not Found"
+            return
+        }
+        
+        guard let _ = _password.text, _password.text == "1234"
+        else {
+            txtlabel.isHidden = false
+            txtlabel.text = "Wrong Password"
+            return
+        }
+        let vc = self.storyboard?.instantiateViewController(identifier: "DashboardViewController") as! DashboardViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtlabel.isHidden = true
         viewWillDisappear(true)
         _email.underlined(color: .darkGray)
         _password.underlined(color: .darkGray)
