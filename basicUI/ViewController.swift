@@ -15,6 +15,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         _email.setIcon(UIImage(named:"mail")!)
        }
     }
+    let emails = ["bharat@divami.com","sankalp@divami.com","manikanta@divami.com","maneesha@divami.com","krishna@divami.com"]
     
     
     @IBOutlet var _loginButton: UIView!
@@ -27,7 +28,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet var txtlabel: UILabel!
     @IBAction func clickLogin(_ sender: Any) {
         txtlabel.isHidden = true
-        guard let _ = _email.text, _email.text == "abc@gmail.com"
+        guard let _ = _email.text, emails.contains(_email.text!)
         else {
             txtlabel.isHidden = false
             txtlabel.text = "User Email Not Found"
@@ -104,7 +105,7 @@ func setIcon(_ image: UIImage) {
                   CGRect(x: 10, y: 5, width: 20, height: 20))
    iconView.image = image
    let iconContainerView: UIView = UIView(frame:
-                  CGRect(x: 20, y: 0, width: 30, height: 30))
+                  CGRect(x: 20, y: 0, width: 50, height: 30))
    iconContainerView.addSubview(iconView)
    leftView = iconContainerView
    leftViewMode = .always
