@@ -12,7 +12,7 @@ class StepperViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     
     @IBOutlet weak var tableView: UITableView!
-    var imgArr = ["coastal","cargo","bw", "cont","glow"]
+    var imgArr = ["bw","bw","bw", "bw","bw"]
     var txt = ["Booking Confirmed","Container Picked up","Arrived at POR","Arrived at POR","Shipment Received at POL"]
     var txt2 = ["Oman","Tras","Sewewd","Pijko","Hans"]
     var txt3 = ["8 Mar 2018","9 Mar 2018","10 Mar 2018","7 Mar 2018","30 Mar 2018"]
@@ -36,7 +36,7 @@ class StepperViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.line2.text = self.txt2[indexPath.row]
         cell.line3.text = self.txt3[indexPath.row]
         // cell.roundImg = UIImage(named: "imageName")
-        let anyAvatarImage:UIImage = UIImage(named: "ship icon")!
+        let anyAvatarImage:UIImage = UIImage(named: "fromdestination")!
         var flag = 0
         var ball = 1000
         if indexPath.row == 0 {
@@ -44,7 +44,7 @@ class StepperViewController: UIViewController, UITableViewDelegate, UITableViewD
             ball = 1
         }
         cell.roundImg.maskCircle(anyImage: anyAvatarImage,status: ball)
-        let line_x = 27
+        let line_x = 35
         
         drawDottedLine(start: CGPoint(x: line_x, y: 3), end: CGPoint(x: line_x, y: 500), view: cell,status: flag)
         return cell
