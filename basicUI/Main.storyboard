@@ -167,7 +167,7 @@
                                 <state key="normal" title=" " backgroundImage="findvesselschedules"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vessel Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hh-J7-pSS">
-                                <rect key="frame" x="150.5" y="204" width="117.5" height="19"/>
+                                <rect key="frame" x="153.5" y="204" width="111.5" height="19"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
@@ -209,23 +209,19 @@
                                 <rect key="frame" x="129" y="273" width="235" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="dropDownDisplay:" destination="RUD-fd-6dx" eventType="touchUpInside" id="ZTd-lP-4BW"/>
-                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ln-bz-RjE">
-                                <rect key="frame" x="94" y="548" width="225" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="ButtonWithImage" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ln-bz-RjE" customClass="ButtonWithImage" customModule="basicUI" customModuleProvider="target">
+                                <rect key="frame" x="69" y="548" width="250" height="55"/>
                                 <color key="backgroundColor" name="deepBlue"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="225" id="XFY-Ne-eYY"/>
+                                    <constraint firstAttribute="width" constant="250" id="XFY-Ne-eYY"/>
                                     <constraint firstAttribute="height" constant="55" id="hng-1f-Nxg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Find My Vessel">
-                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <state key="normal" title="Find My Vessel" image="ship icon">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="findVessel:" destination="RUD-fd-6dx" eventType="touchUpInside" id="TkP-Mk-6DT"/>
+                                    <action selector="findButton:" destination="RUD-fd-6dx" eventType="touchUpInside" id="Ul9-ED-pRs"/>
                                     <segue destination="VVm-J7-hoH" kind="show" identifier="vesselScheduler" id="5jP-MJ-awV"/>
                                 </connections>
                             </button>
@@ -237,24 +233,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-xc-Yzp">
-                                <rect key="frame" x="158" y="317" width="142" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-xc-Yzp">
+                                <rect key="frame" x="141" y="272" width="223" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select from Location"/>
                                 <connections>
                                     <action selector="fromLocation:" destination="RUD-fd-6dx" eventType="touchUpInside" id="R9d-Qi-aMs"/>
-                                    <action selector="toLocation:" destination="RUD-fd-6dx" eventType="touchUpInside" id="iZV-8O-dzA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm9-hg-VZh">
-                                <rect key="frame" x="144" y="411" width="127" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select To Location"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFI-bT-GKO">
+                                <rect key="frame" x="139" y="279" width="200" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="kIy-Cg-d1a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDx-Q0-1eB">
+                                <rect key="frame" x="119" y="367" width="245" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="m5g-mE-yqR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="fromLocation:" destination="RUD-fd-6dx" eventType="touchUpInside" id="2fK-bT-7gX"/>
-                                    <action selector="toLocation:" destination="RUD-fd-6dx" eventType="touchUpInside" id="V6T-U7-OOb"/>
+                                    <action selector="toLocation:" destination="RUD-fd-6dx" eventType="touchUpInside" id="NyH-lw-iSo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D13-gi-2Ys">
+                                <rect key="frame" x="107" y="374" width="246" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="atd-aM-Lzl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hHt-Dx-pjD"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
@@ -262,6 +276,9 @@
                             <constraint firstItem="0IT-qL-eF9" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="414" id="0rX-fK-Rxa"/>
                             <constraint firstItem="q5t-Ly-O6b" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="2pD-ci-BM5"/>
                             <constraint firstItem="rTr-3i-Tyt" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="48a-JX-7S4"/>
+                            <constraint firstItem="cDx-Q0-1eB" firstAttribute="top" secondItem="Hbt-Ol-jcr" secondAttribute="bottom" constant="60" id="89e-Ge-abs"/>
+                            <constraint firstItem="YFI-bT-GKO" firstAttribute="top" secondItem="1hh-J7-pSS" secondAttribute="bottom" constant="56" id="8k2-tv-f1S"/>
+                            <constraint firstItem="D13-gi-2Ys" firstAttribute="top" secondItem="Hbt-Ol-jcr" secondAttribute="bottom" constant="67" id="9DY-Lx-1AX"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="Hbt-Ol-jcr" secondAttribute="trailing" constant="50" id="9iO-V5-mhc"/>
                             <constraint firstAttribute="trailing" secondItem="rTr-3i-Tyt" secondAttribute="trailing" constant="30" id="Ccz-FE-P9M"/>
                             <constraint firstItem="9Le-3l-gVS" firstAttribute="leading" secondItem="q5t-Ly-O6b" secondAttribute="trailing" constant="30" id="DK7-AQ-9Ot"/>
@@ -269,6 +286,7 @@
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="5ln-bz-RjE" secondAttribute="trailing" constant="95" id="Qix-8x-Uws"/>
                             <constraint firstItem="ve6-PL-QfO" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="8" symbolic="YES" id="QkS-oV-GMX"/>
                             <constraint firstItem="rTr-3i-Tyt" firstAttribute="leading" secondItem="9Le-3l-gVS" secondAttribute="trailing" constant="30" id="Rjh-eA-OmD"/>
+                            <constraint firstItem="D13-gi-2Ys" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="57" id="RrU-Jz-ocr"/>
                             <constraint firstItem="NSd-kx-KZF" firstAttribute="centerX" secondItem="hRt-4d-6Dw" secondAttribute="centerX" constant="17.5" id="Utq-oz-wN8"/>
                             <constraint firstItem="Hbt-Ol-jcr" firstAttribute="top" secondItem="1hh-J7-pSS" secondAttribute="bottom" constant="50" id="VDI-TP-JxN"/>
                             <constraint firstItem="9Le-3l-gVS" firstAttribute="top" secondItem="hHt-Dx-pjD" secondAttribute="top" constant="5" id="Whz-0K-R7F"/>
@@ -285,7 +303,9 @@
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="ve6-PL-QfO" secondAttribute="trailing" constant="50" id="qmh-3v-d2C"/>
                             <constraint firstItem="hRt-4d-6Dw" firstAttribute="top" secondItem="rTr-3i-Tyt" secondAttribute="bottom" constant="80" id="s2Y-ed-ZhC"/>
                             <constraint firstItem="Hbt-Ol-jcr" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="30" id="stR-o0-5Zb"/>
+                            <constraint firstItem="YFI-bT-GKO" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="40" id="w1x-eX-vtV"/>
                             <constraint firstItem="hHt-Dx-pjD" firstAttribute="trailing" secondItem="hRt-4d-6Dw" secondAttribute="trailing" constant="50" id="w53-eH-DxN"/>
+                            <constraint firstItem="cDx-Q0-1eB" firstAttribute="leading" secondItem="f00-Kb-gfg" secondAttribute="trailing" constant="20" id="yOh-gX-JZA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yi7-Mn-oWh"/>
@@ -293,6 +313,9 @@
                         <outlet property="dateTxt" destination="0IT-qL-eF9" id="UWN-iU-rPn"/>
                         <outlet property="dropDownTextFeild2" destination="ve6-PL-QfO" id="gwi-CW-gWX"/>
                         <outlet property="dropDownTextField1" destination="Hbt-Ol-jcr" id="39d-UK-cXh"/>
+                        <outlet property="dropDownTextField2" destination="ve6-PL-QfO" id="8io-DS-xgU"/>
+                        <outlet property="fromLocationLabel" destination="YFI-bT-GKO" id="H5S-Qe-FBr"/>
+                        <outlet property="toLocationLabel" destination="D13-gi-2Ys" id="3r1-j6-V7D"/>
                         <outlet property="vesselScheduleLabel" destination="1hh-J7-pSS" id="jAQ-Yn-45m"/>
                     </connections>
                 </viewController>
@@ -370,20 +393,20 @@
                                 <state key="normal" title="Button" image="forward"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzW-3q-SFk">
-                                <rect key="frame" x="185" y="180" width="44.5" height="21"/>
+                                <rect key="frame" x="186" y="180" width="42.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                                 <color key="textColor" name="babyBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here are the vessels that best suit your requirements" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7J-Li-m9c">
-                                <rect key="frame" x="20" y="385" width="374" height="37.5"/>
+                                <rect key="frame" x="20" y="385" width="374" height="19.5"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yBI-RO-2hG">
-                                <rect key="frame" x="0.0" y="432.5" width="413" height="409.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="414.5" width="413" height="427.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cardCell" id="8E3-e4-Ypg" customClass="CardCell" customModule="basicUI" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="413" height="250"/>
@@ -463,7 +486,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="____" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcP-KI-T0D">
-                                                            <rect key="frame" x="140" y="81" width="30" height="21"/>
+                                                            <rect key="frame" x="140" y="81" width="30" height="22"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="Tg6-sD-xl0"/>
                                                             </constraints>
@@ -524,7 +547,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BO-B9-Wdx">
-                                <rect key="frame" x="20" y="20" width="167" height="26"/>
+                                <rect key="frame" x="20" y="20" width="159" height="26"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
                                 <state key="normal" title=" Vessel Schedule" image="back"/>
                                 <connections>
@@ -532,19 +555,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Searched for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtD-Ib-Qlj">
-                                <rect key="frame" x="200" y="86" width="154" height="24"/>
+                                <rect key="frame" x="205.5" y="86" width="148.5" height="24"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave" translatesAutoresizingMaskIntoConstraints="NO" id="RNA-iQ-gab">
-                                <rect key="frame" x="138" y="230" width="60" height="6"/>
+                                <rect key="frame" x="138" y="231" width="60" height="6"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="current-status-Shipment-ready-to-be-loaded-at-POL" translatesAutoresizingMaskIntoConstraints="NO" id="AJk-0l-q3r">
                                 <rect key="frame" x="205" y="136" width="214" height="110"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave-1" translatesAutoresizingMaskIntoConstraints="NO" id="twz-RP-Dag">
-                                <rect key="frame" x="220" y="230" width="66" height="6"/>
+                                <rect key="frame" x="220" y="231" width="66" height="6"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AoJ-b0-xhb"/>
@@ -602,11 +625,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="Us1-Ox-tQZ"/>
                     <connections>
-                        <outlet property="date" destination="KzW-3q-SFk" id="FfG-cz-ekW"/>
-                        <outlet property="destination" destination="b8L-Mk-OdC" id="4an-gb-egt"/>
-                        <outlet property="destinationCode" destination="Ihd-9v-jTz" id="4wq-Sz-2DW"/>
-                        <outlet property="source" destination="Ce2-Qo-ZAB" id="Zb2-Yj-pg2"/>
-                        <outlet property="sourceCode" destination="vCB-oP-Cy1" id="Ufe-ot-gRY"/>
+                        <outlet property="dateLabel" destination="KzW-3q-SFk" id="6rg-GW-sH0"/>
+                        <outlet property="destinationCodeLabel" destination="Ihd-9v-jTz" id="Fhv-bi-yav"/>
+                        <outlet property="destinationLabel" destination="b8L-Mk-OdC" id="6Lf-dN-c7i"/>
+                        <outlet property="sourceCodeLabel" destination="vCB-oP-Cy1" id="Jup-q5-8UZ"/>
+                        <outlet property="sourceLabel" destination="Ce2-Qo-ZAB" id="zql-j4-u7L"/>
                         <outlet property="tableView" destination="yBI-RO-2hG" id="ayi-7l-PI7"/>
                     </connections>
                 </viewController>
@@ -851,7 +874,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4E-Tk-CHd">
-                                <rect key="frame" x="20" y="10" width="198" height="26"/>
+                                <rect key="frame" x="20" y="10" width="193" height="26"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
                                 <state key="normal" title="  SNB OMN 18 5891" image="back"/>
                                 <connections>
@@ -874,13 +897,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Containers Off Loaded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJx-9o-b9S">
-                                <rect key="frame" x="205" y="139" width="182.5" height="21"/>
+                                <rect key="frame" x="205" y="139" width="178.5" height="22"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ho Chi Minh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgD-0s-zsa">
-                                <rect key="frame" x="205" y="161" width="89" height="19"/>
+                                <rect key="frame" x="205" y="162" width="88" height="19"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                 <color key="textColor" name="babyBlueColor"/>
                                 <nil key="highlightedColor"/>
@@ -895,14 +918,14 @@
                                             <constraint firstAttribute="height" constant="20" id="m1m-Gs-7ui"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ho Chi Minh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-HI-gLD">
-                                        <rect key="frame" x="45" y="20" width="99" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ho Chi Minh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-HI-gLD">
+                                        <rect key="frame" x="45" y="20" width="99" height="22"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-U0-EVh">
-                                        <rect key="frame" x="45" y="40" width="36" height="20"/>
+                                        <rect key="frame" x="45" y="40" width="35" height="20"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -915,13 +938,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saigon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vat-07-V8j">
-                                        <rect key="frame" x="240" y="20" width="56" height="21"/>
+                                        <rect key="frame" x="240" y="20" width="52.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGG-Fx-o7q">
-                                        <rect key="frame" x="248.5" y="40" width="33" height="20"/>
+                                        <rect key="frame" x="247" y="40" width="33" height="20"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -965,13 +988,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Containers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bir-TJ-SdC">
-                                        <rect key="frame" x="70" y="170" width="102.5" height="24.5"/>
+                                        <rect key="frame" x="70" y="170" width="101.5" height="24.5"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nci-qa-2l2">
-                                        <rect key="frame" x="328" y="170" width="56" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nci-qa-2l2">
+                                        <rect key="frame" x="326" y="170" width="58" height="32"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                         <state key="normal" title="View All"/>
                                     </button>
@@ -994,14 +1017,14 @@
                                         <state key="normal" title="View Details"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSw-0h-lzU">
-                                        <rect key="frame" x="369" y="226" width="25" height="30"/>
+                                        <rect key="frame" x="369" y="227" width="25" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="0lM-eS-q3Q"/>
                                             <constraint firstAttribute="height" constant="30" id="mCq-rB-3Rr"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="menu-dots"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="- - - - -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clW-WA-UR1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- - - - -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clW-WA-UR1">
                                         <rect key="frame" x="153" y="29" width="56" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
