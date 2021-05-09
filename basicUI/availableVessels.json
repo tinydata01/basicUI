@@ -1,0 +1,35 @@
+[{
+	"availableVessels": [{
+			"vesselName": "Lisbon",
+			"vesselNo": "1806",
+			"expectedTimeValue": "9",
+			"expectedTimeUnit": "days",
+			"startDate": "15 Apr 2018",
+			"arrivalDate": "24 Apr 2018"
+		},
+		{
+			"vesselName": "Munich",
+			"vesselNo": "2341",
+			"expectedTimeValue": "23",
+			"expectedTimeUnit": "hours",
+			"startDate": "23 Jan 2018",
+			"arrivalDate": "23 Jan 2018"
+		},
+		{
+			"vesselName": "Detroit",
+			"vesselNo": "5934",
+			"expectedTimeValue": "13",
+			"expectedTimeUnit": "days",
+			"startDate": "17 Dec 2018",
+			"arrivalDate": "30 Dec 2018"
+		},
+		{
+			"vesselName": "Leicester",
+			"vesselNo": "1444",
+			"expectedTimeValue": "20",
+			"expectedTimeUnit": "hours",
+			"startDate": "May 9, 2021",
+			"arrivalDate": "May 9, 2021"
+		}
+	]
+}]

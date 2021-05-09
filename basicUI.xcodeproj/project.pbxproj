@@ -19,11 +19,11 @@
 		37E227AD2646FE0D0083562B /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37E227A92646FE0D0083562B /* Lato-Bold.ttf */; };
 		37E227AE2646FE0D0083562B /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37E227AA2646FE0D0083562B /* Lato-Regular.ttf */; };
 		3E25892E593ECED09EFE91D3 /* Pods_basicUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC10CDF6D618E4A00A554B4 /* Pods_basicUI.framework */; };
-		8B7E95A9264857DC00320D5E /* availableVessels.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B7E95A8264857DB00320D5E /* availableVessels.json */; };
-		8B7E95AB264857FE00320D5E /* trackingStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B7E95AA264857FE00320D5E /* trackingStatus.json */; };
 		8BB38095264659030055BA43 /* VesselSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB38094264659030055BA43 /* VesselSearchViewController.swift */; };
 		8BB596BB2647B0D50047223F /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB596BA2647B0D50047223F /* StepperViewController.swift */; };
 		8BB596BD2647B1060047223F /* StepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB596BC2647B1060047223F /* StepTableViewCell.swift */; };
+		AD0CBE3826485A470075B54D /* availableVessels.json in Resources */ = {isa = PBXBuildFile; fileRef = AD0CBE3626485A470075B54D /* availableVessels.json */; };
+		AD0CBE3926485A470075B54D /* trackingStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = AD0CBE3726485A470075B54D /* trackingStatus.json */; };
 		AD410A0D2645923B00AA0C54 /* VesselScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410A0C2645923B00AA0C54 /* VesselScheduleViewController.swift */; };
 		AD410A102645924B00AA0C54 /* TrackShipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410A0F2645924B00AA0C54 /* TrackShipmentViewController.swift */; };
 		AD410A132645925900AA0C54 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD410A122645925900AA0C54 /* DashboardViewController.swift */; };
@@ -53,11 +53,11 @@
 		37E227B1264711B40083562B /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E227B3264715740083562B /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E227B726471B0C0083562B /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B7E95A8264857DB00320D5E /* availableVessels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = availableVessels.json; path = "../../Downloads/iOS Hackathon JSONs/availableVessels.json"; sourceTree = "<group>"; };
-		8B7E95AA264857FE00320D5E /* trackingStatus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = trackingStatus.json; path = "../../Downloads/iOS Hackathon JSONs/trackingStatus.json"; sourceTree = "<group>"; };
 		8BB38094264659030055BA43 /* VesselSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselSearchViewController.swift; sourceTree = "<group>"; };
 		8BB596BA2647B0D50047223F /* StepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
 		8BB596BC2647B1060047223F /* StepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTableViewCell.swift; sourceTree = "<group>"; };
+		AD0CBE3626485A470075B54D /* availableVessels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = availableVessels.json; sourceTree = "<group>"; };
+		AD0CBE3726485A470075B54D /* trackingStatus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trackingStatus.json; sourceTree = "<group>"; };
 		AD410A0C2645923B00AA0C54 /* VesselScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselScheduleViewController.swift; sourceTree = "<group>"; };
 		AD410A0F2645924B00AA0C54 /* TrackShipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackShipmentViewController.swift; sourceTree = "<group>"; };
 		AD410A122645925900AA0C54 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -86,9 +86,6 @@
 		371B35FC261A464700365F20 = {
 			isa = PBXGroup;
 			children = (
-				8B7E95AA264857FE00320D5E /* trackingStatus.json */,
-				8B7E95A8264857DB00320D5E /* availableVessels.json */,
-				ADC10BD82647ED4B00925701 /* source-and-destination.json */,
 				371B3607261A464700365F20 /* basicUI */,
 				371B3606261A464700365F20 /* Products */,
 				92925F1859076314403F4BA5 /* Pods */,
@@ -107,6 +104,9 @@
 		371B3607261A464700365F20 /* basicUI */ = {
 			isa = PBXGroup;
 			children = (
+				AD0CBE3626485A470075B54D /* availableVessels.json */,
+				AD0CBE3726485A470075B54D /* trackingStatus.json */,
+				ADC10BD82647ED4B00925701 /* source-and-destination.json */,
 				371B3608261A464700365F20 /* AppDelegate.swift */,
 				371B360A261A464700365F20 /* SceneDelegate.swift */,
 				371B360C261A464700365F20 /* ViewController.swift */,
@@ -222,7 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B7E95AB264857FE00320D5E /* trackingStatus.json in Resources */,
+				AD0CBE3926485A470075B54D /* trackingStatus.json in Resources */,
 				37E227AD2646FE0D0083562B /* Lato-Bold.ttf in Resources */,
 				37E227AB2646FE0D0083562B /* Lato-Light.ttf in Resources */,
 				3782E4602645765D006DF07B /* Images.xcassets in Resources */,
@@ -232,7 +232,7 @@
 				371B3612261A464800365F20 /* Assets.xcassets in Resources */,
 				37E227AC2646FE0D0083562B /* Lato-Black.ttf in Resources */,
 				ADD46DB0264586160015D9CB /* Main.storyboard in Resources */,
-				8B7E95A9264857DC00320D5E /* availableVessels.json in Resources */,
+				AD0CBE3826485A470075B54D /* availableVessels.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
